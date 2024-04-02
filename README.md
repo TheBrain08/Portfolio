@@ -38,13 +38,13 @@
 
 
 ## Feinplanung
-[html/gpt.html](doc/gpt.md)
-[html/index.html](doc/index.md)
-[html/pro-c.html](doc/pro-c.md)
-[html/pro-csharp.html](doc/pro-csharp.md)
-[html/pro-java.html](doc/pro-java.md)
-[html/pro-python.html](doc/pro-python.md)
-[html/pro-web.html](doc/pro-web.md)
+[gpt.html](doc/gpt.md)
+[index.html](doc/index.md)
+[pro-c.html](doc/pro-c.md)
+[pro-csharp.html](doc/pro-csharp.md)
+[pro-java.html](doc/pro-java.md)
+[pro-python.html](doc/pro-python.md)
+[pro-web.html](doc/pro-web.md)
 
 ## Frameworks
 Bootstrap
