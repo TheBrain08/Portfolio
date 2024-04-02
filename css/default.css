@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(206, 206, 206);
+}
+
+nav {
+    background-color: rgb(182, 182, 182);
+    border-bottom: 1.5px rgb(100, 100, 100) solid;
+}
+
+main {
+    padding: 0px 15px 0px 15px;
+}
+
+footer #nav-3 {
+    border-top: 1.5px rgb(100, 100, 100) solid;
+    margin-top: 10px;
+    padding-left: 30px;
+    background-color: rgb(182, 182, 182);
+}

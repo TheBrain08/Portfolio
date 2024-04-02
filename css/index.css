@@ -1,0 +1,39 @@
+.row .headlines {
+    margin-bottom: 20px;
+}
+
+#project {
+    display: flex;
+    justify-content: center;
+}
+
+#pj-grid {
+    background-color: rgb(100, 100, 100);
+    border: 1px black solid;
+    border-radius: 25px;
+}
+
+#project {
+    display: flex;
+    justify-content: center;
+}
+
+#project .card {
+    border: 1px black solid;
+    border-radius: 7px;
+    margin: 10px 0px 10px 0px;
+}
+
+#project .card .card-body {
+    background-color: rgb(207, 207, 207);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+#project .card img {
+    border-bottom: 0.2px black solid;
+}
+
+#project h2 {
+    text-align: center;
+}
