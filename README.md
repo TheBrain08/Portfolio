@@ -6,6 +6,14 @@
 - css
     - default.css
     - index.css
+-doc
+    - gpt.md
+    - index.md
+    - pro-c.md
+    - pro-csharp.md
+    - pro-java.md
+    - pro-python.md
+    - pro-web.md
 - html
     - gpt.html
     - index.html
@@ -30,5 +38,13 @@
 
 
 ## Feinplanung
+[gpt.html](doc/gpt.md)
+[index.html](doc/index.md)
+[pro-c.html](doc/pro-c.md)
+[pro-csharp.html](doc/pro-csharp.md)
+[pro-java.html](doc/pro-java.md)
+[pro-python.html](doc/pro-python.md)
+[pro-web.html](doc/pro-web.md)
+
 ## Frameworks
 Bootstrap
