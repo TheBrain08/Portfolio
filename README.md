@@ -6,7 +6,7 @@
 - css
     - default.css
     - index.css
--doc
+- doc
     - gpt.md
     - index.md
     - pro-c.md
