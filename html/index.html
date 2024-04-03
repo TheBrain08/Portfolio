@@ -11,20 +11,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/default.css">
+    <script src="../javascript/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="../img/logo.png" id="logo" alt="Bootstrap" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="../img/logo.png" id="logo" alt="Bootstrap" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list" ></i>
               </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle disabled" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#home">Home</a>
@@ -40,8 +75,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle disabled" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
+                        Projects
+                    </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -51,35 +86,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="p-4">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#about-me">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle disabled" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </header>
     <main>
         <div class="row" id="home">
             <div class="row">
@@ -96,10 +103,73 @@
         </div>
         <hr>
         <div class="row">
-            <h2 id="about-me">About Me</h2>
-            <p>Skills</p>
-            <p>Expierence</p>
-            <p>Education</p>
+            <div class="col-3"></div>
+            <div class="col-6" id="aboutme">
+                <div class="row">
+                    <div class="col-12 col-sm-0 col-md-0 col-xl-3">
+                        <img src="../img/aboutme.png" class="rounded img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <h2 id="about-me">About Me</h2>
+                        <nav class="navbar navbar-expand-sm">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#aboutmetoggler" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="bi bi-list" ></i>
+                              </button>
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" onclick="changeAboutMe('skills')">Skills</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" onclick="changeAboutMe('expierence')">Expierence</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" onclick="changeAboutMe('education')">Education</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="collapse" id="aboutmetoggler">
+                            <div class="p-4">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="changeAboutMe('skills')">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="changeAboutMe('expierence')">Expierence</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="changeAboutMe('education')">Education</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container rounded" id="about-me-skills" style="display: block;">
+                            <h3>Skills:</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis autem debitis odit illo distinctio consectetur corporis beatae accusamus quo laborum aliquam veniam iusto, officiis eligendi quasi aperiam suscipit omnis! Recusandae.</p>
+                        </div>
+                        <div class="container rounded" id="about-me-expierence" style="display: none;">
+                            <h3>Expierence:</h3>
+                            <ul>
+                                <li>jhasdd</li>
+                                <li>asdgasdj</li>
+                            </ul>
+                        </div>
+                        <div class="container rounded" id="about-me-education" style="display: none;">
+                            <h3>Education:</h3>
+                            <ul>
+                                <li>jhasdd</li>
+                                <li>asdgasdj</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+                </div>
+
+            </div>
+
         </div>
         <div class="row " id="project">
             <h2 id="projects">Projects</h2>
@@ -186,5 +256,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 
 </html>

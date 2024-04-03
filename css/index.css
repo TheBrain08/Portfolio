@@ -25,13 +25,43 @@
     color: rgb(14, 131, 224);
 }
 
+#aboutme {
+    border: 1.5px black solid;
+    border-radius: 25px;
+    background-color: rgb(27, 27, 27);
+}
+
+#aboutme nav a {
+    cursor: pointer;
+}
+
+#aboutme h2 {
+    color: rgb(241, 31, 78);
+    font-size: 3vw;
+}
+
+#aboutme h3 {
+    color: rgb(241, 31, 78);
+    font-size: 20px;
+}
+
+#aboutme .row {
+    padding: 15px;
+}
+
+#aboutme .container {
+    background-color: rgb(35, 35, 35);
+    height: auto;
+    width: 30vw;
+}
+
 #project {
     display: flex;
     justify-content: center;
 }
 
 #pj-grid {
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(27, 27, 27);
     border: 1px black solid;
     border-radius: 25px;
 }
