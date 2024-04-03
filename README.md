@@ -28,6 +28,7 @@
     - logo-css.png
     - logo-html.png
     - logo-java.svg
+    - logo.png
     - mouse.ico
     - mouse.png
     - python-logo-only.png
