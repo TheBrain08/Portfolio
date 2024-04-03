@@ -7,6 +7,15 @@
     padding-top: 30%;
 }
 
+#navbarToggleExternalContent {
+    background-color: rgb(18, 14, 27);
+}
+
+.bi-list {
+    color: white;
+    font-size: 35px;
+}
+
 #home #name {
     color: rgb(241, 31, 78);
 }
