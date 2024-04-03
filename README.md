@@ -25,7 +25,9 @@
     - bg.png
     - image.png
     - logo-c.png
+    - logo-c-outline.png
     - logo-csharp.png
+    - logo-csharp-outline.png
     - logo-css.png
     - logo-html.png
     - logo-java.svg
