@@ -38,11 +38,11 @@
     background-color: rgb(27, 27, 27);
 }
 
-#aboutme nav a {
+#aboutme .nav-link {
     cursor: pointer;
 }
 
-#aboutme nav .active {
+#aboutme .active {
     color: rgb(253, 156, 177);
 }
 
