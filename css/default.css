@@ -1,10 +1,25 @@
 body {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(2, 1, 2);
+    color: rgb(254, 253, 255);
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(18, 14, 27);
     border-bottom: 1.5px rgb(100, 100, 100) solid;
+}
+
+nav #logo {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: rgb(254, 253, 255);
+    scroll-behavior: smooth;
+}
+
+.nav-item a:hover {
+    color: red;
 }
 
 main {
@@ -12,6 +27,7 @@ main {
 }
 
 footer #nav-3 {
+    color: black;
     border-top: 1.5px rgb(100, 100, 100) solid;
     margin-top: 10px;
     padding-left: 30px;
