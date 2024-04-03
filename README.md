@@ -7,7 +7,6 @@
     - default.css
     - index.css
 - doc
-    - gpt.md
     - index.md
     - pro-c.md
     - pro-csharp.md
@@ -15,7 +14,6 @@
     - pro-python.md
     - pro-web.md
 - html
-    - gpt.html
     - index.html
     - pro-c.html
     - pro-csharp.html
