@@ -23,6 +23,9 @@
     - pro-python.html
     - pro-web.html
 - img
+    - aboutme.png
+    - bg.png
+    - image.png
     - logo-c.png
     - logo-csharp.png
     - logo-css.png
@@ -32,6 +35,7 @@
     - mouse.ico
     - mouse.png
     - python-logo-only.png
+    - aquare.png
     - Web-logo.ico
     - Web-logo.png
 - js
