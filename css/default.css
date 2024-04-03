@@ -5,12 +5,28 @@ body {
 }
 
 header nav {
-    background-color: rgb(18, 14, 27);
+    background-color: rgb(27, 27, 27);
     border-bottom: 1.5px rgb(100, 100, 100) solid;
 }
 
 header nav #logo {
     margin-left: 20px;
+}
+
+header nav .nav-item {
+    padding-right: 50px;
+}
+
+header nav .navbar-collapse {
+    margin-right: 50px;
+}
+
+header nav .dropdown-menu {
+    background-color: rgb(18, 14, 27);
+}
+
+header nav .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(18, 14, 27, 0.2);
 }
 
 .nav-item a {
@@ -27,9 +43,9 @@ main {
 }
 
 footer #nav-3 {
-    color: black;
+    color: white;
     border-top: 1.5px rgb(100, 100, 100) solid;
     margin-top: 10px;
     padding-left: 30px;
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(27, 27, 27);
 }
