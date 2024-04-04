@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/default.css">
     <script src="../javascript/index.js"></script>
+    <script src="../javascript/footerLoader.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadFooter()">
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
@@ -259,15 +260,15 @@
                     <form class="row" onsubmit="sendMessage()">
                         <div class="col-md-6">
                             <label for="namef" class="form-label">Name:</label>
-                            <input type="text" class="form-control" id="namef">
+                            <input type="text" class="form-control" id="namef" required>
                         </div>
                         <div class="col-md-6">
                             <label for="Email" class="form-label">E-Mail</label>
-                            <input type="email" class="form-control" id="Email">
+                            <input type="email" class="form-control" id="Email" required>
                         </div>
                         <div class="col-md-12">
                             <label for="Nachricht" class="form-label">Nachricht</label>
-                            <textarea name="Nachricht" class="form-control" id="Nachricht" rows="5"></textarea>
+                            <textarea name="Nachricht" class="form-control" id="Nachricht" rows="5" required minlength="10"></textarea>
                         </div>
                         <div class="col-10">
                             <button type="submit" class="btn btn-primary">Send</button>
@@ -278,20 +279,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <nav id="nav-3">
-            <!-- Inhalte nicht als Listen-Elemente und nicht der Klasse nav-link zuordnen (Achtung bei Copy&Paste), nur Aneinanderreihung von Link-Elementen -->
-            <span>&#64;2023</span>
-            <span>|</span>
-            <a href="./impressum.html">Impressum</a>
-            <span>|</span>
-            <a href="./datenschutz.html">Datenschutz</a>
-            <span>|</span>
-            <a href="./erklaerungBF.html">Erklärung zur Barrierefreiheit</a>
-        </nav>
-    </footer>
-
-
+    <div id="footer"></div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

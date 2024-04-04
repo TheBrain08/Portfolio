@@ -98,7 +98,7 @@ function sendMessage() {
         "thumbnail": {
             "url": "https://iili.io/EKWC74.th.png"
         },
-        color: hexToDecimal("#05F6E2")
+        color: hexToDecimal("#F11F4E")
     }
 
     var params = {

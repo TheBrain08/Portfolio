@@ -14,6 +14,7 @@
     - pro-python.md
     - pro-web.md
 - html
+    - footer.html
     - index.html
     - pro-c.html
     - pro-csharp.html
@@ -39,6 +40,7 @@
     - Web-logo.ico
     - Web-logo.png
 - js
+    - footerLoader.js
     - index.js
 
 
