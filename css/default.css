@@ -42,10 +42,14 @@ main {
     padding: 0px 15px 0px 15px;
 }
 
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
 footer #nav-3 {
     color: white;
     border-top: 1.5px rgb(100, 100, 100) solid;
     margin-top: 10px;
-    padding-left: 30px;
     background-color: rgb(27, 27, 27);
 }
