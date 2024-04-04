@@ -10,4 +10,3 @@ function loadFooter() {
             footer.innerHTML = htmlSnipped
         })
 }
-loadFooter();
