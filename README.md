@@ -25,20 +25,18 @@
     - aboutme.png
     - bg.png
     - image.png
-    - logo-c.png
     - logo-c-outline.png
-    - logo-cpp.png
+    - logo-c.png
     - logo-cpp-outline.png
+    - logo-cpp.png
     - logo-css.png
     - logo-html.png
     - logo-java.svg
+    - logo-web.png
     - logo.png
     - mouse.ico
     - mouse.png
     - python-logo-only.png
-    - aquare.png
-    - Web-logo.ico
-    - Web-logo.png
 - js
     - footerLoader.js
     - index.js
