@@ -81,10 +81,9 @@ function sendMessage() {
 
     var myEmbed = {
         author: {
-            name: "Portfolio"
+            name: "Portfolio Webpage"
         },
-        title: "My new embed",
-        title: "Bewerbung",
+        title: "Portfolio",
         fields: [{
             "name": "Name",
             "value": "> " + Name

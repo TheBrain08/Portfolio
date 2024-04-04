@@ -17,7 +17,7 @@
     - footer.html
     - index.html
     - pro-c.html
-    - pro-csharp.html
+    - pro-cpp.html
     - pro-java.html
     - pro-python.html
     - pro-web.html
@@ -27,8 +27,8 @@
     - image.png
     - logo-c.png
     - logo-c-outline.png
-    - logo-csharp.png
-    - logo-csharp-outline.png
+    - logo-cpp.png
+    - logo-cpp-outline.png
     - logo-css.png
     - logo-html.png
     - logo-java.svg

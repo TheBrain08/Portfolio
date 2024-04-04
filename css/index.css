@@ -37,9 +37,9 @@
 }
 
 #aboutme {
-    border: 1.5px black solid;
     border-radius: 25px;
     background-color: rgb(27, 27, 27);
+    border: 1.2px rgb(82, 82, 82) solid;
 }
 
 #aboutme .nav-link {
@@ -58,6 +58,7 @@
 #aboutme h3 {
     color: rgb(241, 31, 78);
     font-size: 20px;
+    padding-top: 8px;
 }
 
 #aboutme .row {
@@ -66,6 +67,7 @@
 
 #aboutme .container {
     background-color: rgb(35, 35, 35);
+    border: 1.2px rgb(82, 82, 82) solid;
 }
 
 #aboutme .container li {
@@ -109,7 +111,7 @@
 }
 
 #contact {
-    border: 1.5px black solid;
+    border: 1.2px rgb(82, 82, 82) solid;
     border-radius: 25px;
     background-color: rgb(27, 27, 27);
 }
