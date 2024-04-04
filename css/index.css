@@ -122,33 +122,64 @@
     height: auto;
 }
 
+#hexagon text {
+    color: white;
+}
+
 .hexagonShapes {
-    stroke: blue;
-    stroke-width: 3;
+    stroke: rgb(241, 31, 78);
+}
+
+.hexagonText {
+    fill: whitesmoke;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .hexagonShapes:hover {
-    opacity: 0.3;
+    cursor: pointer;
+    opacity: 0.1;
+    transition: opacity 0.3s;
 }
 
 #hexagon_one {
     fill: url(#img-1);
 }
 
+#hexagon_one:hover+#hexagon_one_text {
+    display: block;
+}
+
 #hexagon_two {
     fill: url(#img-2);
+}
+
+#hexagon_two:hover+#hexagon_two_text {
+    display: block;
 }
 
 #hexagon_three {
     fill: url(#img-3);
 }
 
+#hexagon_three:hover+#hexagon_three_text {
+    display: block;
+}
+
 #hexagon_four {
     fill: url(#img-4);
 }
 
+#hexagon_four:hover+#hexagon_four_text {
+    display: block;
+}
+
 #hexagon_five {
     fill: url(#img-5);
+}
+
+#hexagon_five:hover+#hexagon_five_text {
+    display: block;
 }
 
 #contact {
