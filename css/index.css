@@ -143,6 +143,10 @@
     font-weight: bold;
 }
 
+.modShapes a:hover .hexagonText {
+    display: block;
+}
+
 a:hover .hexagonShapes {
     cursor: pointer;
     opacity: 0.1;
