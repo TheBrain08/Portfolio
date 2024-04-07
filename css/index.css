@@ -14,6 +14,10 @@
     background-color: rgb(18, 14, 27);
 }
 
+#HeaderDropdownButton:hover #HeaderDropdown {
+    display: block;
+}
+
 .bi-list {
     color: white;
     font-size: 35px;
@@ -21,6 +25,9 @@
 
 #home #name {
     color: rgb(241, 31, 78);
+    /*#0EB1B1*/
+    /*#0E34D8*/
+    /*#1FD1F1*/
 }
 
 #zwo {
@@ -136,7 +143,7 @@
     font-weight: bold;
 }
 
-.hexagonShapes:hover {
+a:hover .hexagonShapes {
     cursor: pointer;
     opacity: 0.1;
     transition: opacity 0.3s;
