@@ -118,7 +118,7 @@
 
 .hexagonShapes {
     stroke: rgb(241, 31, 78);
-    stroke-width: 6;
+    stroke-width: 2;
 }
 
 .hexagonText {
@@ -135,24 +135,19 @@ a:hover .hexagonShapes {
     cursor: pointer;
     opacity: 0.6;
     transition: opacity 0.3s;
+    stroke-width: 6;
 }
 
 #hexagon_one {
     fill: url(#img-1);
 }
 
-#hexagon_one:hover {
-    transform: scale(1.5);
-    transition: transform 1s;
-}
-
-#hexagon_two:hover {
-    transform: scale(0.5);
-    transition: transform 1s;
-}
-
 #hexagon_one:hover+#hexagon_one_text {
     display: block;
+}
+
+#hexagon_one:hover+#hexagon_two {
+    stroke-width: 2;
 }
 
 #hexagon_two {
