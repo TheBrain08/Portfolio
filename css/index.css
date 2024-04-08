@@ -141,6 +141,16 @@ a:hover .hexagonShapes {
     fill: url(#img-1);
 }
 
+#hexagon_one:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+
+#hexagon_two:hover {
+    transform: scale(0.5);
+    transition: transform 1s;
+}
+
 #hexagon_one:hover+#hexagon_one_text {
     display: block;
 }
