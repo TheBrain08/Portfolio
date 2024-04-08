@@ -1,7 +1,7 @@
 function changeAboutMe(tab) {
     let me = document.getElementById('about-me-me');
     let skills = document.getElementById('about-me-skills');
-    let expierence = document.getElementById('about-me-expierence');
+    let experiences = document.getElementById('about-me-experiences');
     let education = document.getElementById('about-me-education');
 
     let meclass = document.getElementsByClassName('meclass');
@@ -12,7 +12,7 @@ function changeAboutMe(tab) {
     if (tab == 'me') {
         me.style.display = "block";
         skills.style.display = "none";
-        expierence.style.display = "none";
+        experiences.style.display = "none";
         education.style.display = "none";
         meclass[0].classList.add("active");
         meclass[1].classList.add("active");
@@ -25,7 +25,7 @@ function changeAboutMe(tab) {
     } else if (tab == 'skills') {
         me.style.display = "none";
         skills.style.display = "block";
-        expierence.style.display = "none";
+        experiences.style.display = "none";
         education.style.display = "none";
         meclass[0].classList.remove("active");
         meclass[1].classList.remove("active");
@@ -35,10 +35,10 @@ function changeAboutMe(tab) {
         educlass[1].classList.remove("active");
         exclass[0].classList.remove("active");
         exclass[1].classList.remove("active");
-    } else if (tab == 'expierence') {
+    } else if (tab == 'experiences') {
         me.style.display = "none";
         skills.style.display = "none";
-        expierence.style.display = "block";
+        experiences.style.display = "block";
         education.style.display = "none";
         meclass[0].classList.remove("active");
         meclass[1].classList.remove("active");
@@ -52,7 +52,7 @@ function changeAboutMe(tab) {
     } else {
         me.style.display = "none";
         skills.style.display = "none";
-        expierence.style.display = "none";
+        experiences.style.display = "none";
         education.style.display = "block";
         meclass[0].classList.remove("active");
         meclass[1].classList.remove("active");
