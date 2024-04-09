@@ -1,0 +1,15 @@
+main {
+    margin-top: 15px;
+}
+
+.oneProject {
+    background-color: rgb(27, 27, 27);
+}
+
+#headlineAndDesc {
+    height: calc(100vh - 67px - 15px - 5px);
+}
+
+.space {
+    margin-top: 50px;
+}
