@@ -18,8 +18,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <style>
-    .row {
+    #row {
         height: calc(100vh - 119px);
+        padding-top: 25vh;
+    }
+    
+    h1 {
+        color: red;
+    }
+    
+    h2 a {
+        color: white;
+    }
+    
+    .progress {
+        background-color: rgb(120, 120, 120);
+        border-radius: 20px;
+        height: 50px;
+        width: 400px;
+    }
+    
+    .progress-done {
+        background: linear-gradient(to left, rgb(71, 254, 254), rgb(241, 31, 78));
+        border-radius: 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        transition: 1s ease 0.3s;
     }
 </style>
 
@@ -44,24 +73,39 @@
         </nav>
     </header>
     <main>
-        <div class="row">
-            <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <div class="row" id="row">
+            <div class="col-12 col-sm-0 col-md-2 col-xl-2 "></div>
+            <div class="col-12 col-sm-12 col-md-8 col-xl-8  text-center">
                 <h2>
                     This under page us currently on
                 </h2>
                 <br>
-                <h1 style="color: red;">
+                <h1>
                     Maintenance
                 </h1>
                 <br>
                 <h2>
-                    <a style="color: white;" href="./index.html">Go back to the Home</a>
+                    <a href="./index.html">Go back to the Home</a>
                 </h2>
+                <div class="d-flex justify-content-center pt-4">
+                    <div class="progress">
+                        <div class="progress-done" data-done="5"></div>
+                    </div>
+                </div>
+
             </div>
+            <div class="col-12 col-sm-0 col-md-2 col-xl-2 "></div>
+
         </div>
     </main>
     <div id="footer"></div>
+    <script>
+        const progress = document.querySelector('.progress-done');
 
+        progress.style.width = progress.getAttribute('data-done') + '%';
+        progress.style.opacity = 1;
+        progress.innerHTML = progress.getAttribute('data-done') + '%';
+    </script>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
