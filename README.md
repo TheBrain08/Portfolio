@@ -49,7 +49,6 @@
 
 
 ## Feinplanung
-[gpt.html](doc/gpt.md)
 [index.html](doc/index.md)
 [pro-c.html](doc/pro-c.md)
 [pro-csharp.html](doc/pro-csharp.md)
