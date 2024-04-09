@@ -15,7 +15,6 @@
     - pro-python.md
     - pro-web.md
 - html
-    - error.html
     - footer.html
     - index.html
     - maintenance.html
