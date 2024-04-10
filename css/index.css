@@ -112,10 +112,6 @@
     text-align: center;
 }
 
-#hexagon text {
-    color: white;
-}
-
 .hexagonShapes {
     stroke: rgb(241, 31, 78);
     stroke-width: 2;
@@ -140,6 +136,16 @@ a:hover .hexagonShapes {
 
 #hexagon_one {
     fill: url(#img-1);
+}
+
+#hexagon_one:hover {
+    transform: scale(1.5);
+    transition: transform 3s;
+}
+
+#hexagon_one:hover~#hexagon_two {
+    transform: scale(0.5);
+    transition: transform 3s;
 }
 
 #hexagon_one:hover+#hexagon_one_text {
