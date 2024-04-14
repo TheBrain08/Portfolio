@@ -136,24 +136,15 @@ a:hover .hexagonShapes {
 
 #hexagon_one {
     fill: url(#img-1);
+    transition: transform 3s;
 }
 
 #hexagon_one:hover {
     transform: scale(1.5);
-    transition: transform 3s;
-}
-
-#hexagon_one:hover~#hexagon_two {
-    transform: scale(0.5);
-    transition: transform 3s;
 }
 
 #hexagon_one:hover+#hexagon_one_text {
     display: block;
-}
-
-#hexagon_one:hover+#hexagon_two {
-    stroke-width: 2;
 }
 
 #hexagon_two {
