@@ -136,11 +136,6 @@ a:hover .hexagonShapes {
 
 #hexagon_one {
     fill: url(#img-1);
-    transition: transform 3s;
-}
-
-#hexagon_one:hover {
-    transform: scale(1.5);
 }
 
 #hexagon_one:hover+#hexagon_one_text {

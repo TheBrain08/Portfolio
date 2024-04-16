@@ -66,7 +66,7 @@ function changeAboutMe(tab) {
 }
 
 const hexagons = document.querySelectorAll('.hexagonShapes');
-const texte = document.querySelectorAll('hexagonText');
+const texte = document.querySelectorAll('.hexagonText');
 const hexagon_one = document.getElementById('hexagon_one');
 const hexagon_two = document.getElementById('hexagon_two');
 const hexagon_three = document.getElementById('hexagon_three');
@@ -74,15 +74,17 @@ const hexagon_four = document.getElementById('hexagon_four');
 const hexagon_five = document.getElementById('hexagon_five');
 const hexagon_one_text = document.getElementById('hexagon_one_text');
 
-function hoverHandler(event) {
-    hexagons.forEach(hexagon => {
-        if (hexagon === event.target) {
+const modShapes = document.querySelector('.modShapes');
+const anchorTags = modShapes.querySelectorAll('a');
 
-            switch (hexagon.id) {
-                case 'hexagon_one':
-                    hexagon.style.transform = 'scale(1.3) translate(0px, -10px)';
-                    hexagon.style.transition = 'transform 1s';
-                    hexagon_one_text.style.transform = 'translateX(30px)';
+function hoverHandler(event) {
+    anchorTags.forEach(anchor => {
+        if (anchor === event.currentTarget) {
+
+            switch (anchor.id) {
+                case 'a_hexagon_one':
+                    anchor.style.transform = 'scale(1.3) translate(0px, -10px)';
+                    anchor.style.transition = 'transform 1s';
 
                     hexagon_two.style.transform += 'translate(125px, 0px)';
                     hexagon_three.style.transform += 'translate(125px, 0px)';
@@ -90,18 +92,18 @@ function hoverHandler(event) {
                     hexagon_five.style.transform += 'translate(120px, 50px)';
 
                     break;
-                case 'hexagon_two':
-                    hexagon.style.transform = 'scale(1.3) translate(-65px, -10px)';
-                    hexagon.style.transition = 'transform 1s';
+                case 'a_hexagon_two':
+                    anchor.style.transform = 'scale(1.3) translate(-65px, -10px)';
+                    anchor.style.transition = 'transform 1s';
 
                     hexagon_one.style.transform += 'translate(65px, 0px)';
                     hexagon_three.style.transform += 'translate(170px, 0px)';
                     hexagon_four.style.transform += 'translate(100px, 75px)';
                     hexagon_five.style.transform += 'translate(115px, 75px)';
                     break;
-                case 'hexagon_three':
-                    hexagon.style.transform = 'scale(1.3) translate(-120px, -10px)';
-                    hexagon.style.transition = 'transform 1s';
+                case 'a_hexagon_three':
+                    anchor.style.transform = 'scale(1.3) translate(-120px, -10px)';
+                    anchor.style.transition = 'transform 1s';
 
                     hexagon_one.style.transform += 'translate(150px, 0px)';
                     hexagon_two.style.transform += 'translate(150px, 0px)';
@@ -109,48 +111,49 @@ function hoverHandler(event) {
                     hexagon_five.style.transform += 'translate(105px, 50px)';
 
                     break;
-                case 'hexagon_four':
-                    hexagon.style.transform = 'scale(1.3) translate(-50px, -50px)';
-                    hexagon.style.transition = 'transform 1s';
+                case 'a_hexagon_four':
+                    anchor.style.transform = 'scale(1.3) translate(-50px, -50px)';
+                    anchor.style.transition = 'transform 1s';
 
                     hexagon_one.style.transform += 'translate(85px, 0px)';
                     hexagon_two.style.transform += 'translate(85px, 0px)';
                     hexagon_three.style.transform += 'translate(85px, 0px)';
                     hexagon_five.style.transform += 'translate(125px, 50px)';
                     break;
-                case 'hexagon_five':
-                    hexagon.style.transform = 'scale(1.3) translate(-100px, -50px)';
-                    hexagon.style.transition = 'transform 1s';
+                case 'a_hexagon_five':
+                    anchor.style.transform = 'scale(1.3) translate(-100px, -50px)';
+                    anchor.style.transition = 'transform 1s';
 
                     hexagon_one.style.transform += 'translate(180px, 5px)';
                     hexagon_two.style.transform += 'translate(180px, 5px)';
                     hexagon_three.style.transform += 'translate(180px, 5px)';
                     hexagon_four.style.transform += 'translate(90px, 50px)';
                     break;
-                default:
-                    hexagon.style.transform = 'scale(1.3)';
-                    hexagon.style.transition = 'transform 1s ease';
             }
 
         } else {
-            hexagon.style.transform += 'scale(0.7)';
-            hexagon.style.transition = 'transform 1s ease';
-
+            anchor.style.transform += 'scale(0.7)';
+            anchor.style.transition = 'transform 1s ease';
 
         }
     });
 }
 
 function resetHandler() {
-    hexagons.forEach(hexagon => {
-        hexagon.style.transform = 'scale(1)';
-        hexagon.style.transition = 'transform 1s ease';
+    anchorTags.forEach(anchor => {
+        anchor.style.transform = 'scale(1)';
+        anchor.style.transition = 'transform 1s ease';
     });
 }
-
+/*
 hexagons.forEach(hexagon => {
     hexagon.addEventListener('mouseover', hoverHandler);
     hexagon.addEventListener('mouseout', resetHandler);
+});*/
+
+anchorTags.forEach(anchor => {
+    anchor.addEventListener('mouseover', hoverHandler);
+    anchor.addEventListener('mouseout', resetHandler);
 });
 
 function sendMessage() {
