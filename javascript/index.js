@@ -93,13 +93,13 @@ function hoverHandler(event) {
                     a_hexagon_five.style.transform += 'translate(115px, 75px)';
                     break;
                 case 'a_hexagon_three':
-                    anchor.style.transform = 'scale(1.3) translate(-120px, -10px)';
+                    anchor.style.transform = 'scale(1.3) translate(-145px, -10px)';
                     anchor.style.transition = 'transform 1s';
 
-                    a_hexagon_one.style.transform += 'translate(150px, 0px)';
-                    a_hexagon_two.style.transform += 'translate(150px, 0px)';
-                    a_hexagon_four.style.transform += 'translate(105px, 50px)';
-                    a_hexagon_five.style.transform += 'translate(105px, 50px)';
+                    a_hexagon_one.style.transform += 'translate(100px, 0px)';
+                    a_hexagon_two.style.transform += 'translate(100px, 0px)';
+                    a_hexagon_four.style.transform += 'translate(75px, 50px)';
+                    a_hexagon_five.style.transform += 'translate(75px, 50px)';
 
                     break;
                 case 'a_hexagon_four':
@@ -136,11 +136,6 @@ function resetHandler() {
         anchor.style.transition = 'transform 1s ease';
     });
 }
-/*
-hexagons.forEach(hexagon => {
-    hexagon.addEventListener('mouseover', hoverHandler);
-    hexagon.addEventListener('mouseout', resetHandler);
-});*/
 
 anchorTags.forEach(anchor => {
     anchor.addEventListener('mouseover', hoverHandler);
