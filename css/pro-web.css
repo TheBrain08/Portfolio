@@ -3,13 +3,75 @@ main {
 }
 
 .oneProject {
+    border-radius: 25px;
+    border: solid 1.5px rgb(241, 31, 78);
     background-color: rgb(27, 27, 27);
+    height: auto;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
-#headlineAndDesc {
-    height: calc(100vh - 67px - 15px - 5px);
+.Headlines {
+    font-weight: lighter;
+    font-size: 40px;
 }
 
-.space {
-    margin-top: 50px;
+.numbers {
+    color: rgb(241, 31, 78);
+}
+
+.btn {
+    font-size: 13px;
+    padding: 10px 24px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(241, 31, 78);
+    border: 2px solid rgb(241, 31, 78);
+    margin-right: 30px;
+}
+
+.btn:hover {
+    font-size: 13px;
+    padding: 10px 24px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 91, 126);
+    border: 2px solid rgb(255, 91, 126);
+    margin-right: 30px;
+    transform: scale(1.1);
+}
+
+.oneProject img {
+    border-radius: 15px;
+    margin-top: 10%;
+}
+
+.oneProject img:hover {
+    cursor: pointer;
+}
+
+.oneProject:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow: 3px 3px 33px 5px rgb(241, 31, 78);
+}
+
+.modal .oneProject:hover {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.modal img:hover {
+    cursor: default;
+}
+
+.modal #popupbtn {
+    margin-top: 20px;
+}
+
+.modal #popupbtn:hover {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: transparent;
 }
