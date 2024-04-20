@@ -16,6 +16,19 @@ main {
     font-size: 40px;
 }
 
+.HeadlinesSecond {
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.textPopup {
+    margin-left: 30px;
+}
+
+.popupTextBlock {
+    margin-left: 25px;
+}
+
 .numbers {
     color: rgb(241, 31, 78);
 }
@@ -64,12 +77,15 @@ main {
 }
 
 .modal #popupbtn {
+    background-color: rgb(241, 31, 78);
+    color: white;
     margin-top: 20px;
 }
 
 .modal #popupbtn:hover {
     transform: scale(1);
     cursor: pointer;
+    background-color: rgb(255, 91, 126);
 }
 
 .modal-content {
