@@ -7,96 +7,74 @@ const title = Object.assign(document.createElement('span'), {
 });
 
 let whichProject;
-
 const Projects = [{
         ID: "01",
-        title: " Chatroom",
-        headlines: [{ headline: " Login" }, { headline: " User activity and Chat" }, { headline: " User Settings" },
-            { headline: " Groups" }, { headline: " News" }, { headline: " Send News" }, { headline: " User administartion" }
+        title: "Chatroom",
+        headlines: [
+            { headline: "Login" },
+            { headline: "Register" },
+            { headline: "Forgot Password" },
+            { headline: "User activity and Chat" },
+            { headline: "User Settings" },
+            { headline: "Groups" },
+            { headline: "News" },
+            { headline: "Send News" },
+            { headline: "User administartion" }
         ],
         texte: [{
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }],
-        imgs: [{
-                src: "../img/WEB/Chatroom/Login.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             },
             {
-                src: "../img/WEB/Chatroom/Chat&Activity.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             },
             {
-                src: "../img/WEB/Chatroom/Settings.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             },
             {
-                src: "../img/WEB/Chatroom/Groups.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             },
             {
-                src: "../img/WEB/Chatroom/News.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             },
             {
-                src: "../img/WEB/Chatroom/SendNews.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             },
             {
-                src: "../img/WEB/Chatroom/UserAdministartion.png"
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+            },
+            {
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+            },
+            {
+                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
             }
+        ],
+        imgs: [
+            { src: "../img/WEB/Chatroom/Login.png" },
+            { src: "../img/WEB/Chatroom/Register.png" },
+            { src: "../img/WEB/Chatroom/ForgotPassword.png" },
+            { src: "../img/WEB/Chatroom/Chat&Activity.png" },
+            { src: "../img/WEB/Chatroom/Settings.png" },
+            { src: "../img/WEB/Chatroom/Groups.png" },
+            { src: "../img/WEB/Chatroom/News.png" },
+            { src: "../img/WEB/Chatroom/SendNews.png" },
+            { src: "../img/WEB/Chatroom/UserAdministartion.png" }
         ],
         stack: ["HTML", "CSS", "Javascript", "PHP"]
     },
     {
-        ID: "01",
-        title: " Chatroom",
-        headlines: [{ headline: " Login" }, { headline: " User activity and Chat" }, { headline: " User Settings" },
-            { headline: " Groups" }, { headline: " News" }, { headline: " Send News" }, { headline: " User administartion" },
+        ID: "02",
+        title: "TicTacToe",
+        headlines: [
+            { headline: "Startscreen" }
         ],
         texte: [{
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
-        }, {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
         }],
-        imgs: [{
-                src: "../img/WEB/Chatroom/Login.png"
-            },
-            {
-                src: "../img/WEB/Chatroom/Chat&Activity.png"
-            },
-            {
-                src: "../img/WEB/Chatroom/Settings.png"
-            },
-            {
-                src: "../img/WEB/Chatroom/Groups.png"
-            },
-            {
-                src: "../img/WEB/Chatroom/News.png"
-            },
-            {
-                src: "../img/WEB/Chatroom/SendNews.png"
-            },
-            {
-                src: "../img/WEB/Chatroom/UserAdministartion.png"
-            }
+        imgs: [
+            { src: "../img/WEB/TicTacToe/Startscreen.png" }
         ],
-        stack: ["HTML", "CSS", "Javascript", "PHP"]
+        stack: ["HTML", "CSS", "Javascript"]
     }
 ];
 
@@ -105,8 +83,11 @@ function loadPopupContent(project) {
         case "Chatroom":
             whichProject = 0;
             break;
-        default:
+        case "TicTacToe":
             whichProject = 1;
+            break;
+        default:
+            whichProject = 0;
             break;
     }
 
@@ -138,7 +119,7 @@ function loadPopupContent(project) {
 
             const headlineID = Object.assign(document.createElement('span'), {
                 className: 'fw-semibold numbers popupDescriptionID',
-                textContent: formattedIndex
+                textContent: formattedIndex + " "
             });
 
             const headlineText = Object.assign(document.createElement('span'), {
@@ -169,6 +150,7 @@ function loadPopupContent(project) {
 
             const image2 = image.cloneNode(true);
             image2.classList.remove('d-block', 'd-sm-block', 'd-md-block', 'd-xl-none', 'd-xxl-none');
+            image2.classList.add('d-none', 'd-xl-block')
             const col2 = Object.assign(document.createElement('div'), {
                 className: 'col-6 col-sm-0 col-md-0 col-xl-6'
             });

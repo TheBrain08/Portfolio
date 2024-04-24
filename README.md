@@ -26,7 +26,17 @@
 - img
     - WEB
         - Chatroom
+            - Chat&Activity.png
+            - ForgotPassword.png
+            - Groups.png
             - Login.png
+            - News.png
+            - Register.png
+            - SendNews.png
+            - Settings.png
+            - UserAdministartion.png
+        - TicTacToe
+            - Startscreen.png
     - aboutme.png
     - bg.png
     - image.png
@@ -45,6 +55,7 @@
 - js
     - footerLoader.js
     - index.js
+    - pro-web.js
 
 
 ## Feinplanung
