@@ -1,7 +1,12 @@
-const ID = document.getElementById('popupProjectID');
-const title = document.getElementById('popupTitle');
-let whichPoject;
+const ID = Object.assign(document.createElement('span'), {
+    id: 'popupProjectID'
+});
 
+const title = Object.assign(document.createElement('span'), {
+    id: 'popupTitle'
+});
+
+let whichProject;
 
 const Projects = [{
         ID: "01",
@@ -98,106 +103,112 @@ const Projects = [{
 function loadPopupContent(project) {
     switch (project) {
         case "Chatroom":
-            whichPoject = 0;
+            whichProject = 0;
             break;
         default:
-            whichPoject = 1;
+            whichProject = 1;
             break;
     }
 
     const popupContentContainer = document.querySelector('.modal-content .row .col-12');
     popupContentContainer.innerHTML = ""; // Leeren des Inhalts
 
-    if (Projects[whichPoject].headlines) {
-        const projectID = document.createElement('span');
-        projectID.classList.add('fw-semibold', 'numbers');
-        projectID.id = 'popupProjectID';
-        projectID.textContent = Projects[whichPoject].ID;
+    if (Projects[whichProject].headlines) {
+        const projectID = Object.assign(document.createElement('span'), {
+            className: 'fw-semibold numbers',
+            textContent: Projects[whichProject].ID
+        });
 
-        const projectTitle = document.createElement('span');
-        projectTitle.id = 'popupTitle';
-        projectTitle.textContent = Projects[whichPoject].title;
+        const projectTitle = Object.assign(document.createElement('span'), {
+            id: 'popupTitle',
+            textContent: Projects[whichProject].title
+        });
 
-        const projectHeadlines = document.createElement('p');
-        projectHeadlines.classList.add('Headlines', 'fw-lighter');
-        projectHeadlines.appendChild(projectID);
-        projectHeadlines.appendChild(projectTitle);
+        const projectHeadlines = Object.assign(document.createElement('p'), {
+            className: 'Headlines fw-lighter'
+        });
+        projectHeadlines.append(projectID, projectTitle);
 
-        const headlineWrapper = document.createElement('div');
-        headlineWrapper.classList.add('row', 'popupTextBlock');
+        const headlineWrapper = Object.assign(document.createElement('div'), {
+            className: 'row popupTextBlock'
+        });
 
-        Projects[whichPoject].headlines.forEach((headline, index) => {
+        Projects[whichProject].headlines.forEach((headline, index) => {
             const formattedIndex = (index + 1 < 10) ? "0" + (index + 1) : (index + 1);
 
-            const headlineID = document.createElement('span');
-            headlineID.classList.add('fw-semibold', 'numbers', 'popupDescriptionID');
-            headlineID.textContent = formattedIndex;
+            const headlineID = Object.assign(document.createElement('span'), {
+                className: 'fw-semibold numbers popupDescriptionID',
+                textContent: formattedIndex
+            });
 
-            const headlineText = document.createElement('span');
-            headlineText.classList.add('popupHeadlines');
-            headlineText.textContent = headline.headline;
+            const headlineText = Object.assign(document.createElement('span'), {
+                className: 'popupHeadlines',
+                textContent: headline.headline
+            });
 
-            const headlineParagraph = document.createElement('p');
-            headlineParagraph.classList.add('HeadlinesSecond', 'fw-lighter');
-            headlineParagraph.appendChild(headlineID);
-            headlineParagraph.appendChild(headlineText);
+            const headlineParagraph = Object.assign(document.createElement('p'), {
+                className: 'HeadlinesSecond fw-lighter'
+            });
+            headlineParagraph.append(headlineID, headlineText);
 
-            const textParagraph = document.createElement('p');
-            textParagraph.classList.add('popupText');
-            textParagraph.textContent = Projects[whichPoject].texte[index].text;
+            const textParagraph = Object.assign(document.createElement('p'), {
+                className: 'popupText',
+                textContent: Projects[whichProject].texte[index].text
+            });
 
-            const image = document.createElement('img');
-            image.src = Projects[whichPoject].imgs[index].src;
-            image.alt = "";
-            image.classList.add('popupImg', 'img-fluid', 'd-block', 'd-sm-block', 'd-md-block', 'd-xl-none', 'd-xxl-none');
+            const image = Object.assign(document.createElement('img'), {
+                src: Projects[whichProject].imgs[index].src,
+                alt: "",
+                className: 'popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none'
+            });
 
-            const col1 = document.createElement('div');
-            col1.classList.add('col-12', 'col-sm-12', 'col-md-12', 'col-xl-6');
-            col1.appendChild(headlineParagraph);
-            col1.appendChild(textParagraph);
-            col1.appendChild(image);
+            const col1 = Object.assign(document.createElement('div'), {
+                className: 'col-12 col-sm-12 col-md-12 col-xl-6'
+            });
+            col1.append(headlineParagraph, textParagraph, image);
 
             const image2 = image.cloneNode(true);
             image2.classList.remove('d-block', 'd-sm-block', 'd-md-block', 'd-xl-none', 'd-xxl-none');
-            const col2 = document.createElement('div');
-            col2.classList.add('col-6', 'col-sm-0', 'col-md-0', 'col-xl-6');
+            const col2 = Object.assign(document.createElement('div'), {
+                className: 'col-6 col-sm-0 col-md-0 col-xl-6'
+            });
             col2.appendChild(image2);
 
-            const row = document.createElement('div');
-            row.classList.add('row', 'popupTextBlock');
-            row.appendChild(col1);
-            row.appendChild(col2);
+            const row = Object.assign(document.createElement('div'), {
+                className: 'row popupTextBlock'
+            });
+            row.append(col1, col2);
 
             headlineWrapper.appendChild(row);
         });
 
-        const stackHTML = document.createElement('p');
-        stackHTML.classList.add('fw-semibold');
-        stackHTML.textContent = 'Stack: ';
+        const stackHTML = Object.assign(document.createElement('p'), {
+            className: 'fw-semibold',
+            textContent: 'Stack: '
+        });
 
-        Projects[whichPoject].stack.forEach((tech, index) => {
-            const techSpan = document.createElement('span');
-            techSpan.classList.add('ms-4', 'text-secondary');
-            techSpan.textContent = tech;
+        Projects[whichProject].stack.forEach((tech, index) => {
+            const techSpan = Object.assign(document.createElement('span'), {
+                className: 'ms-4 text-secondary',
+                textContent: tech
+            });
             stackHTML.appendChild(techSpan);
         });
 
-        const buttonsContainer = document.createElement('div');
+        const buttonsContainer = Object.assign(document.createElement('div'), {});
 
-        const gitButton = document.createElement('button');
-        gitButton.classList.add('btn', 'rounded');
-        gitButton.textContent = 'Go to Git';
+        const gitButton = Object.assign(document.createElement('button'), {
+            className: 'btn rounded',
+            textContent: 'Go to Git'
+        });
 
-        const siteButton = document.createElement('button');
-        siteButton.classList.add('btn', 'rounded');
-        siteButton.textContent = 'Visit Site';
+        const siteButton = Object.assign(document.createElement('button'), {
+            className: 'btn rounded',
+            textContent: 'Visit Site'
+        });
 
-        buttonsContainer.appendChild(gitButton);
-        buttonsContainer.appendChild(siteButton);
+        buttonsContainer.append(gitButton, siteButton);
 
-        popupContentContainer.appendChild(projectHeadlines);
-        popupContentContainer.appendChild(headlineWrapper);
-        popupContentContainer.appendChild(stackHTML);
-        popupContentContainer.appendChild(buttonsContainer);
+        popupContentContainer.append(projectHeadlines, headlineWrapper, stackHTML, buttonsContainer);
     }
 }
