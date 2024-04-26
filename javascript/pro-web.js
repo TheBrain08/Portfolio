@@ -60,7 +60,9 @@ const Projects = [{
             { src: "../img/WEB/Chatroom/SendNews.png" },
             { src: "../img/WEB/Chatroom/UserAdministartion.png" }
         ],
-        stack: ["HTML", "CSS", "Javascript", "PHP"]
+        stack: ["HTML", "CSS", "Javascript", "PHP"],
+        git: " ",
+        site: " "
     },
     {
         ID: "02",
@@ -189,12 +191,6 @@ function loadPopupContent(project) {
             className: 'btn rounded',
             textContent: 'Visit Site'
         });
-
-        // Annahme: Du hast ein Objekt mit den Links für Git und die Website
-        const links = {
-            git: "https://github.com/TheBrain08/TicTacToe",
-            site: "../TicTacToe/index.html"
-        };
 
         gitButton.addEventListener('click', function() {
             window.open(Projects[whichProject].git, '_blank');
