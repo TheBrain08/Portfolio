@@ -71,7 +71,7 @@ const Projects = [{
             { headline: "Startscreen" }
         ],
         texte: [{
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+            text: "What can I say ? It's just a simple TicTacToe game, play it like you know it"
         }],
         imgs: [
             { src: "../img/WEB/TicTacToe/Startscreen.png" }
