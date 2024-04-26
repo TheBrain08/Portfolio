@@ -74,7 +74,9 @@ const Projects = [{
         imgs: [
             { src: "../img/WEB/TicTacToe/Startscreen.png" }
         ],
-        stack: ["HTML", "CSS", "Javascript"]
+        stack: ["HTML", "CSS", "Javascript"],
+        git: "https://github.com/TheBrain08/TicTacToe",
+        site: "../TicTacToe/index.html"
     }
 ];
 
@@ -176,7 +178,6 @@ function loadPopupContent(project) {
             });
             stackHTML.appendChild(techSpan);
         });
-
         const buttonsContainer = Object.assign(document.createElement('div'), {});
 
         const gitButton = Object.assign(document.createElement('button'), {
@@ -187,6 +188,20 @@ function loadPopupContent(project) {
         const siteButton = Object.assign(document.createElement('button'), {
             className: 'btn rounded',
             textContent: 'Visit Site'
+        });
+
+        // Annahme: Du hast ein Objekt mit den Links für Git und die Website
+        const links = {
+            git: "https://github.com/TheBrain08/TicTacToe",
+            site: "../TicTacToe/index.html"
+        };
+
+        gitButton.addEventListener('click', function() {
+            window.open(Projects[whichProject].git, '_blank');
+        });
+
+        siteButton.addEventListener('click', function() {
+            window.open(Projects[whichProject].site, '_blank');
         });
 
         buttonsContainer.append(gitButton, siteButton);
