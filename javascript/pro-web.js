@@ -79,6 +79,22 @@ const Projects = [{
         stack: ["HTML", "CSS", "Javascript"],
         git: "https://github.com/TheBrain08/TicTacToe",
         site: "../TicTacToe/index.html"
+    },
+    {
+        ID: "03",
+        title: "CoinFlip",
+        headlines: [
+            { headline: "Startscreen" }
+        ],
+        texte: [{
+            text: "What can I say ? It's just a simple coinflipper, click on the button and flip the coin"
+        }],
+        imgs: [
+            { src: "../img/WEB/CoinFlip/Startscreen.png" }
+        ],
+        stack: ["HTML", "CSS", "Javascript"],
+        git: "https://github.com/TheBrain08/CoinFlip",
+        site: "../CoinFlip/index.html"
     }
 ];
 
@@ -89,6 +105,9 @@ function loadPopupContent(project) {
             break;
         case "TicTacToe":
             whichProject = 1;
+            break;
+        case "CoinFlip":
+            whichProject = 2;
             break;
         default:
             whichProject = 0;
@@ -101,7 +120,7 @@ function loadPopupContent(project) {
     if (Projects[whichProject].headlines) {
         const projectID = Object.assign(document.createElement('span'), {
             className: 'fw-semibold numbers',
-            textContent: Projects[whichProject].ID
+            textContent: Projects[whichProject].ID + " "
         });
 
         const projectTitle = Object.assign(document.createElement('span'), {
