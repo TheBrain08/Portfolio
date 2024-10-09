@@ -14,7 +14,7 @@ The project structure is organized as follows:
   - `footer.html`: Shared footer file for all pages.
   - `index.html`: The portfolio's home page.
   - `maintenance.html`: Maintenance page for use when the website is unavailable.
-  - `pro-c.html`, `procpp.html`, `pro-java.html`, `propython.html`: Pages dedicated to specific programming languages.
+  - `pro-c.html`, `procpp.html`, `propython.html`: Pages dedicated to specific programming languages.
 - **img**: Contains images and icons for the project.
 - **js**: Contains JavaScript files for the functionalities of the pages.
   - `footerLoader.js`: JavaScript file for loading the footer on the pages.

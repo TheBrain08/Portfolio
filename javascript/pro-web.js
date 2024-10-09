@@ -204,12 +204,12 @@ function loadPopupContent(project) {
 
         const gitButton = Object.assign(document.createElement('button'), {
             className: 'btn rounded',
-            textContent: 'Go to Git'
+            innerHTML: 'Go to Git <i class="bi bi-box-arrow-up-right"></i>'
         });
 
         const siteButton = Object.assign(document.createElement('button'), {
             className: 'btn rounded',
-            textContent: 'Visit Site'
+            innerHTML: 'Visit Site <i class="bi bi-box-arrow-up-right"></i>'
         });
 
         gitButton.addEventListener('click', function() {
