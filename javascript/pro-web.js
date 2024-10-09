@@ -199,6 +199,7 @@ function loadPopupContent(project) {
             });
             stackHTML.appendChild(techSpan);
         });
+
         const buttonsContainer = Object.assign(document.createElement('div'), {});
 
         const gitButton = Object.assign(document.createElement('button'), {
@@ -219,7 +220,10 @@ function loadPopupContent(project) {
             window.open(Projects[whichProject].site, '_blank');
         });
 
-        buttonsContainer.append(gitButton, siteButton);
+
+        if (Projects[whichProject].title != "Chatroom") {
+            buttonsContainer.append(gitButton, siteButton);
+        }
 
         popupContentContainer.append(projectHeadlines, headlineWrapper, stackHTML, buttonsContainer);
     }
