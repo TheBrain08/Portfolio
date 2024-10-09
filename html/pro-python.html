@@ -10,11 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/pro-python.css">
     <script src="../javascript/footerLoader.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 
-<body onload="loadFooter(), window.location ='./maintenance.html'; ">
+<body onload="loadFooter()">
     <header>
         <nav class="navbar navbar-expand sticky-top bg-gray-600">
             <div class="container-fluid">
@@ -38,6 +42,174 @@
         </nav>
     </header>
     <main>
+        <div class="row space">
+            <figure class="text-center">
+                <blockquote class="blockquote text-decoration-underline">
+                    <h2>TicTacToe as a school project</h2>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    This is a project that I programmed during my two-year vocational college for information technology assistants. It is the game TicTacToe which was created with the graphics tool tkinter
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>Startscreen / Playfield</span></p>
+                        <p>When you start the program this is the screen thats shows up</p>
+                        <p>It's simple designed:</p>
+                        <ul>
+                            <li>Nine buttons that form the playing field </li>
+                            <li>A label that indicates which symbol is currently on the move</li>
+                            <li>A X button to select the start symbol X</li>
+                            <li>A O button to select the start symbol O</li>
+                            <li>A COM Button to start the COM mode</li>
+                            <li>A button which opens the Scoreboard</li>
+                            <li>A button which reset the gamefild</li>
+                        </ul>
+                        <img src="../img/Python/Start.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/Start.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>Scoreboard</span></p>
+                        <p>When you open the scoreboard this is what shows up.</p>
+                        <p>Here you can see which round you are currently in, which symbol is winning and how much wins each symbol or com. There are buttons to reset the scoreboard and to close it</p>
+                        <img src="../img/Python/Scoreboard.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/Scoreboard.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>Select your symbol</span></p>
+                        <p>First you click on the <span class="redText"> X button</span> to select your symbol in that case it's the X</p>
+                        <p>Then <span class="limeText"> the label</span> automatically changes to the current symbol </p>
+                        <img src="../img/Python/SelectetX.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/SelectetX.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>First move</span></p>
+                        <p>You select <span class="redText">a button</span> by clicking on it, and the current symbol that is in use is written into it.</p>
+                        <p><span class="limeText">The label</span> is also automatically updated to show the player which symbol is now on the move</p>
+
+                        <img src="../img/Python/FirstMove.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/FirstMove.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>Next move & Auto change</span></p>
+                        <p>If the player clicks on the <span class="redText">next button</span>, the other symbol that is in the label will be written in</p>
+                        <p>Now <span class="limeText">the label</span> is updated again and shows which symbol is next</p>
+                        <p>This is repeated until one player wins</p>
+                        <img src="../img/Python/Change.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/Change.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>Win</span></p>
+                        <p>If a symbol wins, <span class="limeText">the row</span> is marked red and the game is over.</p>
+                        <p><span class="redText">The label</span> also shows which symbol has won</p>
+                        <img src="../img/Python/Win.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/Win.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>Scoreboard change</span></p>
+                        <p>Here you can see <span class="redText">which round</span> you are in, in this example 2</p>
+                        <p>You can also see <span class="limeText">which symbol</span> has how <span class="limeText">many wins</span> </p>
+                        <p class="yellowText">It also shows which symbol is in the lead</p>
+
+                        <img src="../img/Python/ScoreboardTwo.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/ScoreboardTwo.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>COM mode</span></p>
+                        <p>You start the COM mode by pressing the <span class="redText">COM button</span></p>
+                        <p>Than you start automatically with the X symbol which is displayed in <span class="limeText">the label</span></p>
+                        <p>Now you continue playing the game as usual, only that the COM automatically sets the O</p>
+                        <img src="../img/Python/COMMode.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/COMMode.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+        <div class="row space ">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+
+            <div class="col-12 col-sm-0 col-md-0 col-xl-6">
+                <div class="row container">
+                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                        <p class="fw-bold"><span>"Features"</span></p>
+                        <p>On the Theme tab you can choose between:</p>
+                        <ul>
+                            <li>Background Color</li>
+                            <li>Buttons Color</li>
+                            <li>Font Color</li>
+                        </ul>
+                        <p>If you click on Default everything will be reset to the theme that was preset when the program started</p>
+                        <p>If you click on "Ändern" a window will open in which you can adjust the color as you wish</p>
+
+                        <img src="../img/Python/ColorBG.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/Python/ColorBG.png" alt="" class="img-fluid d-none d-xl-block"></div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
+        </div>
+
 
     </main>
     <footer id="footer"></footer>

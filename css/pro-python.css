@@ -1,0 +1,35 @@
+.space {
+    padding-top: 30px;
+}
+
+.blockquote-footer {
+    color: rgb(192, 192, 192);
+    font-size: 18px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.redText {
+    color: red;
+}
+
+.limeText {
+    color: lime;
+}
+
+.yellowText {
+    color: yellow;
+}
+
+img {
+    max-height: 400px;
+}
+
+.container {
+    background-color: rgb(27, 27, 27);
+    border: solid rgb(241, 31, 78) 2px;
+    border-radius: 25px;
+    padding: 8px;
+}
