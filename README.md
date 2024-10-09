@@ -32,7 +32,6 @@ Each HTML page is described in detail using Markdown documents:
 - [Home Page (index.html)](doc/index.md): Introduction to the portfolio and overview of its contents.
 - [C Programming (pro-c.html)](doc/pro-c.md): Page dedicated to the C programming language.
 - [C++ Programming (pro-cpp.html)](doc/pro-cpp.md): Page dedicated to the C++ programming language.
-- [Java Programming (pro-java.html)](doc/pro-java.md): Page dedicated to the Java programming language.
 - [Python Programming (pro-python.html)](doc/pro-python.md): Page dedicated to the Python programming language.
 - [Web Development (pro-web.html)](doc/pro-web.md): Page dedicated to web development topics.
 
