@@ -1,11 +1,66 @@
+:root {
+    --base-bg-color: rgb(15, 15, 15);
+    --base-color: rgb(254, 253, 255);
+    --header-bg-color: rgb(27, 27, 27);
+    --header-color: rgb(254, 253, 255);
+    --header-hover-color: rgb(255, 0, 0);
+    --primary-bg-color: rgb(255, 255, 255);
+    --primary-color: rgb(0, 0, 0);
+}
+
+.lightmode {
+    --base-bg-color: rgb(240, 240, 240);
+    /* Inverted from rgb(15, 15, 15) */
+    --base-color: rgb(1, 2, 0);
+    /* Inverted from rgb(254, 253, 255) */
+    --header-bg-color: rgb(228, 228, 228);
+    /* Inverted from rgb(27, 27, 27) */
+    --header-color: rgb(1, 2, 0);
+    /* Inverted from rgb(254, 253, 255) */
+    --header-hover-color: rgb(0, 255, 255);
+    /* Inverted from rgb(255, 0, 0) */
+    --primary-bg-color: rgb(0, 0, 0);
+    /* Inverted from rgb(255, 255, 255) */
+    --primary-color: rgb(255, 255, 255);
+    /* Inverted from rgb(0, 0, 0) */
+}
+
+#themeSwitch {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#themeSwitch svg {
+    fill: var(--primary-color);
+}
+
+#themeSwitch svg:last-child {
+    display: none;
+}
+
+.lightmode #themeSwitch svg:first-child {
+    display: none;
+}
+
+.lightmode #themeSwitch svg:last-child {
+    display: block;
+}
+
 body {
-    background-color: rgb(15, 15, 15);
-    color: rgb(254, 253, 255);
+    background-color: var(--base-bg-color);
+    color: var(--base-color);
     font-family: 'Poppins', sans-serif;
 }
 
 header nav {
-    background-color: rgb(27, 27, 27);
+    background-color: var(--header-bg-color);
     border-bottom: 1.5px rgb(100, 100, 100) solid;
 }
 
@@ -17,10 +72,6 @@ header nav .nav-item {
     padding-right: 50px;
 }
 
-header nav .navbar-collapse {
-    margin-right: 50px;
-}
-
 header nav .dropdown-menu {
     background-color: rgb(18, 14, 27);
 }
@@ -30,12 +81,12 @@ header nav .dropdown-menu .dropdown-item:hover {
 }
 
 .nav-item a {
-    color: rgb(254, 253, 255);
+    color: var(--header-color);
     scroll-behavior: smooth;
 }
 
 .nav-item a:hover {
-    color: red;
+    color: var(--header-hover-color)
 }
 
 main {

@@ -1,3 +1,24 @@
+:root {
+    --aboutme-bg-color: rgb(27, 27, 27);
+    --aboutme-container-bg-color: rgb(35, 35, 35);
+    --project-bg-color: rgb(27, 27, 27);
+    --color: rgb(241, 31, 78);
+    --marked-color: rgb(253, 156, 177);
+}
+
+.lightmode {
+    --aboutme-bg-color: rgb(228, 228, 228);
+    /* Inverted from rgb(27, 27, 27) */
+    --aboutme-container-bg-color: rgb(220, 220, 220);
+    /* Inverted from rgb(35, 35, 35) */
+    --project-bg-color: rgb(228, 228, 228);
+    /* Inverted from rgb(27, 27, 27) */
+    --color: rgb(0, 150, 190);
+    /* Darker, more readable blue */
+    --marked-color: rgb(0, 150, 190);
+    /* Same for consistency */
+}
+
 #home {
     margin-top: 25px;
     background-image: url(../img/bg.png);
@@ -32,7 +53,7 @@
 }
 
 #home #name {
-    color: rgb(241, 31, 78);
+    color: var(--color);
     /*#0EB1B1*/
     /*#0E34D8*/
     /*#1FD1F1*/
@@ -42,15 +63,10 @@
     margin-top: 60px;
 }
 
-.row h2 {
-    margin-bottom: 20px;
-    color: rgb(14, 131, 224);
-}
-
 #aboutme {
     border-radius: 25px;
     border: 1px black solid;
-    background-color: rgb(27, 27, 27);
+    background-color: var(--aboutme-bg-color);
 }
 
 #aboutme .nav-link {
@@ -58,16 +74,16 @@
 }
 
 #aboutme .active {
-    color: rgb(253, 156, 177);
+    color: var(--marked-color);
 }
 
 #aboutme h2 {
-    color: rgb(241, 31, 78);
+    color: var(--color);
     font-size: 50px;
 }
 
 #aboutme h3 {
-    color: rgb(241, 31, 78);
+    color: var(--color);
     font-size: 20px;
     padding-top: 8px;
 }
@@ -77,7 +93,7 @@
 }
 
 #aboutme .container {
-    background-color: rgb(35, 35, 35);
+    background-color: var(--aboutme-container-bg-color);
     border: 1.2px rgb(82, 82, 82) solid;
 }
 
@@ -86,17 +102,17 @@
 }
 
 #aboutme .container li::marker {
-    color: rgb(241, 31, 78);
+    color: var(--color);
 }
 
 #project {
-    background-color: rgb(27, 27, 27);
+    background-color: var(--project-bg-color);
     border: 1px black solid;
     border-radius: 25px;
 }
 
 #project h2 {
-    color: rgb(241, 31, 78);
+    color: var(--color);
     font-size: 50px;
 }
 
@@ -105,7 +121,7 @@
 }
 
 .hexagonShapes {
-    stroke: rgb(241, 31, 78);
+    stroke: var(--color);
     stroke-width: 2;
 }
 

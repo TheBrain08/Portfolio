@@ -2,6 +2,11 @@ main {
     margin-top: 15px;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .oneProject {
     border-radius: 25px;
     border: solid 1.5px rgb(241, 31, 78);

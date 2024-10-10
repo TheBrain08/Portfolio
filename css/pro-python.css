@@ -1,5 +1,10 @@
-.space {
-    padding-top: 30px;
+main {
+    margin-top: 15px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .blockquote-footer {
@@ -7,7 +12,26 @@
     font-size: 18px;
 }
 
-main li {
+.space {
+    padding-top: 30px;
+}
+
+img {
+    max-height: 400px;
+    border-radius: 15px;
+    margin-top: 2%;
+}
+
+.container {
+    border-radius: 25px;
+    border: solid rgb(241, 31, 78) 2px;
+    background-color: rgb(27, 27, 27);
+    height: auto;
+    padding: 8px;
+    margin-bottom: 40px;
+}
+
+.container li {
     list-style-type: circle;
 }
 
@@ -21,15 +45,4 @@ main li {
 
 .yellowText {
     color: yellow;
-}
-
-img {
-    max-height: 400px;
-}
-
-.container {
-    background-color: rgb(27, 27, 27);
-    border: solid rgb(241, 31, 78) 2px;
-    border-radius: 25px;
-    padding: 8px;
 }
