@@ -12,8 +12,8 @@
     --aboutme-bg-color: rgb(228, 228, 228);
     --aboutme-container-bg-color: rgb(220, 220, 220);
     --project-bg-color: rgb(228, 228, 228);
-    --color: rgb(0, 150, 190);
-    --marked-color: rgb(0, 150, 190);
+    /*--color: rgb(0, 150, 190);
+    --marked-color: rgb(0, 150, 190);*/
     --header-burger-bg-color: rgb(235, 235, 235);
     --header-burger-dropdown-bg-color: rgb(215, 215, 215);
 }
