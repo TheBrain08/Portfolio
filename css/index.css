@@ -6,6 +6,7 @@
     --marked-color: rgb(253, 156, 177);
     --header-burger-bg-color: rgb(20, 20, 20);
     --header-burger-dropdown-bg-color: rgb(40, 40, 40);
+    --link-color: white;
 }
 
 .lightmode {
@@ -14,6 +15,7 @@
     --project-bg-color: rgb(228, 228, 228);
     --header-burger-bg-color: rgb(235, 235, 235);
     --header-burger-dropdown-bg-color: rgb(215, 215, 215);
+    --link-color: black;
 }
 
 #home {
@@ -99,6 +101,16 @@
     color: var(--color);
 }
 
+#aboutme .container a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+#aboutme .container a:hover {
+    color: red;
+    text-decoration: none;
+}
+
 #project {
     background-color: var(--project-bg-color);
     border: 1px black solid;
@@ -120,7 +132,7 @@
 }
 
 .hexagonText {
-    fill: whitesmoke;
+    fill: var(--color);
     text-decoration: underline;
     font-weight: bold;
 }

@@ -55,6 +55,7 @@ main {
     border: 2px solid rgb(255, 91, 126);
     margin-right: 30px;
     transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
 }
 
 .oneProject img {
@@ -62,7 +63,7 @@ main {
     margin-top: 10%;
 }
 
-.oneProject img:hover {
+.oneProject:hover {
     cursor: pointer;
 }
 
@@ -73,12 +74,22 @@ main {
 }
 
 .modal .popup {
+    position: relative;
     border-radius: 25px;
     border: solid 1.5px rgb(241, 31, 78);
     background-color: var(--project-bg-color);
     height: auto;
     padding: 20px;
     margin-bottom: 40px;
+}
+
+.modal #xPopupbtn {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background-color: rgb(241, 31, 78);
+    color: white;
+    width: auto;
 }
 
 .modal .popup img {
@@ -102,6 +113,7 @@ main {
     background-color: rgb(241, 31, 78);
     color: white;
     margin-top: 20px;
+    padding: 10px 20px;
 }
 
 .modal #popupbtn:hover {

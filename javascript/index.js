@@ -3,17 +3,20 @@ function changeAboutMe(tab) {
     let skills = document.getElementById('about-me-skills');
     let experiences = document.getElementById('about-me-experiences');
     let education = document.getElementById('about-me-education');
+    let links = document.getElementById('about-me-links');
 
     let meclass = document.getElementsByClassName('meclass');
     let skillsclass = document.getElementsByClassName('skillsclass');
     let exclass = document.getElementsByClassName('exclass');
     let educlass = document.getElementsByClassName('educlass');
+    let linksclass = document.getElementsByClassName('linksclass');
 
     if (tab == 'me') {
         me.style.display = "block";
         skills.style.display = "none";
         experiences.style.display = "none";
         education.style.display = "none";
+        links.style.display = "none";
         meclass[0].classList.add("active");
         meclass[1].classList.add("active");
         skillsclass[0].classList.remove("active");
@@ -22,11 +25,14 @@ function changeAboutMe(tab) {
         educlass[1].classList.remove("active");
         exclass[0].classList.remove("active");
         exclass[1].classList.remove("active");
+        linksclass[0].classList.remove("active");
+        linksclass[1].classList.remove("active");
     } else if (tab == 'skills') {
         me.style.display = "none";
         skills.style.display = "block";
         experiences.style.display = "none";
         education.style.display = "none";
+        links.style.display = "none";
         meclass[0].classList.remove("active");
         meclass[1].classList.remove("active");
         skillsclass[0].classList.add("active");
@@ -35,11 +41,14 @@ function changeAboutMe(tab) {
         educlass[1].classList.remove("active");
         exclass[0].classList.remove("active");
         exclass[1].classList.remove("active");
+        linksclass[0].classList.remove("active");
+        linksclass[1].classList.remove("active");
     } else if (tab == 'experiences') {
         me.style.display = "none";
         skills.style.display = "none";
         experiences.style.display = "block";
         education.style.display = "none";
+        links.style.display = "none";
         meclass[0].classList.remove("active");
         meclass[1].classList.remove("active");
         skillsclass[0].classList.remove("active");
@@ -48,12 +57,15 @@ function changeAboutMe(tab) {
         educlass[1].classList.remove("active");
         exclass[0].classList.add("active");
         exclass[1].classList.add("active");
+        linksclass[0].classList.remove("active");
+        linksclass[1].classList.remove("active");
 
-    } else {
+    } else if (tab == 'education') {
         me.style.display = "none";
         skills.style.display = "none";
         experiences.style.display = "none";
         education.style.display = "block";
+        links.style.display = "none";
         meclass[0].classList.remove("active");
         meclass[1].classList.remove("active");
         skillsclass[0].classList.remove("active");
@@ -62,6 +74,24 @@ function changeAboutMe(tab) {
         educlass[1].classList.add("active");
         exclass[0].classList.remove("active");
         exclass[1].classList.remove("active");
+        linksclass[0].classList.remove("active");
+        linksclass[1].classList.remove("active");
+    } else if (tab == 'links') {
+        me.style.display = "none";
+        skills.style.display = "none";
+        experiences.style.display = "none";
+        education.style.display = "none";
+        links.style.display = "block";
+        meclass[0].classList.remove("active");
+        meclass[1].classList.remove("active");
+        skillsclass[0].classList.remove("active");
+        skillsclass[1].classList.remove("active");
+        educlass[0].classList.remove("active");
+        educlass[1].classList.remove("active");
+        exclass[0].classList.remove("active");
+        exclass[1].classList.remove("active");
+        linksclass[0].classList.add("active");
+        linksclass[1].classList.add("active");
     }
 }
 

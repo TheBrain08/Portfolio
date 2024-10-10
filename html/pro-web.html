@@ -27,8 +27,8 @@
     <header>
         <nav class="navbar navbar-expand sticky-top bg-gray-600 ">
             <div class="container-fluid ">
-                <a class="navbar-brand ">
-                    <img src="../img/logo.png " id="logo" alt="Bootstrap " height="40 ">
+                <a class="navbar-brand" href="../html/index.html">
+                    <img src="../img/logo.png " id="logo" alt="Bootstrap " height="40">
                 </a>
                 <a class="navbar-brand ">
                     <img src="../img/logo-web.png " alt="Bootstrap " width="30 " height="30 ">
@@ -38,9 +38,6 @@
               </button>
                 <div class="collapse navbar-collapse " id="navbarNavDropdown ">
                     <ul class="navbar-nav ">
-                        <li class="nav-item ">
-                            <a class="nav-link " aria-current="page " href="./index.html ">Home</a>
-                        </li>
                         <button id="themeSwitch">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
@@ -55,6 +52,7 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="row popup ">
+                        <button class="btn" data-bs-dismiss="modal" id="xPopupbtn">X</button>
                         <div class="col-12">
                         </div>
 
@@ -68,7 +66,7 @@
         <div class="row">
             <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
             <div class="col-12 col-sm-0 col-md-0 col-xl-6">
-                <div class="row oneProject">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('Chatroom')">
                     <div class="col-0 col-sm-0 col-md-7 col-xl-7">
                         <p class="Headlines fw-lighter"><span class="fw-semibold numbers">01</span> Chatroom</p>
                         <p class="text">A Chatroom in that you can chat with other users if they are logged in.</p>
@@ -76,9 +74,7 @@
 
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 col-xl-5">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('Chatroom')">
-                            <img src="../img/WEB/Chatroom/Login.png" alt="" class="img-fluid">
-                        </a>
+                        <img src="../img/WEB/Chatroom/Login.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -89,7 +85,7 @@
             <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
 
             <div class="col-12 col-sm-0 col-md-0 col-xl-6">
-                <div class="row oneProject">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('TicTacToe')">
                     <div class="col-12 col-sm-12 col-md-5 col-xl-5 d-none d-md-block">
                         <a data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('TicTacToe')">
                             <img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="img-fluid">
@@ -103,9 +99,7 @@
                         <button class="btn rounded" onclick="window.open('../TicTacToe/index.html', '_blank');">Visit  Site <i class="bi bi-box-arrow-up-right"></i></button>
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 col-xl-5 d-block d-sm-block d-md-none d-xl-none d-xxl-none">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('TicTacToe')">
-                            <img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="img-fluid">
-                        </a>
+                        <img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -115,7 +109,7 @@
         <div class="row">
             <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
             <div class="col-12 col-sm-0 col-md-0 col-xl-6">
-                <div class="row oneProject">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('CoinFlip')">
                     <div class="col-0 col-sm-0 col-md-7 col-xl-7">
                         <p class="Headlines fw-lighter"><span class="fw-semibold numbers">03</span> CoinFlip</p>
                         <p class="text">Its a coin flipper</p>
@@ -124,9 +118,7 @@
                         <button class="btn rounded" onclick="window.open('../CoinFlip/index.html', '_blank');">Visit  Site <i class="bi bi-box-arrow-up-right"></i></button>
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 col-xl-5">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('CoinFlip')">
-                            <img src="../img/WEB/CoinFlip/Startscreen.png" alt="" class="img-fluid">
-                        </a>
+                        <img src="../img/WEB/CoinFlip/Startscreen.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
