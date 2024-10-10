@@ -49,6 +49,7 @@
 
 #aboutme {
     border-radius: 25px;
+    border: 1px black solid;
     background-color: rgb(27, 27, 27);
 }
 
