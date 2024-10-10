@@ -4,19 +4,18 @@
     --project-bg-color: rgb(27, 27, 27);
     --color: rgb(241, 31, 78);
     --marked-color: rgb(253, 156, 177);
+    --header-burger-bg-color: rgb(20, 20, 20);
+    --header-burger-dropdown-bg-color: rgb(40, 40, 40);
 }
 
 .lightmode {
     --aboutme-bg-color: rgb(228, 228, 228);
-    /* Inverted from rgb(27, 27, 27) */
     --aboutme-container-bg-color: rgb(220, 220, 220);
-    /* Inverted from rgb(35, 35, 35) */
     --project-bg-color: rgb(228, 228, 228);
-    /* Inverted from rgb(27, 27, 27) */
     --color: rgb(0, 150, 190);
-    /* Darker, more readable blue */
     --marked-color: rgb(0, 150, 190);
-    /* Same for consistency */
+    --header-burger-bg-color: rgb(235, 235, 235);
+    --header-burger-dropdown-bg-color: rgb(215, 215, 215);
 }
 
 #home {
@@ -32,11 +31,11 @@
 }
 
 #navbarToggleExternalContent {
-    background-color: rgb(18, 14, 27);
+    background-color: var(--header-burger-bg-color);
 }
 
 #HeaderDropdownBurger {
-    background-color: rgb(31, 24, 46);
+    background-color: var(--header-burger-dropdown-bg-color);
 }
 
 .HeaderDropdownButton:hover #HeaderDropdown {

@@ -191,6 +191,7 @@ function sendMessage() {
 
 let lightmode = localStorage.getItem('lightmode');
 const themeSwitch = document.getElementById('themeSwitch');
+const themeSwitchSM = document.getElementById('themeSwitchSM');
 
 function enableLightmode() {
     document.body.classList.add('lightmode');
@@ -209,4 +210,9 @@ if (lightmode === "active") enableLightmode()
 themeSwitch.addEventListener("click", () => {
     lightmode = localStorage.getItem('lightmode')
     lightmode !== "active" ? enableLightmode() : disableLightmode()
+});
+
+themeSwitchSM.addEventListener("click", () => {
+    lightmode = localStorage.getItem('lightmode');
+    lightmode !== "active" ? enableLightmode() : disableLightmode();
 });

@@ -4,28 +4,24 @@
     --header-bg-color: rgb(27, 27, 27);
     --header-color: rgb(254, 253, 255);
     --header-hover-color: rgb(255, 0, 0);
+    --header-dropdown-bg-color: rgb(20, 20, 20);
     --primary-bg-color: rgb(255, 255, 255);
     --primary-color: rgb(0, 0, 0);
 }
 
 .lightmode {
     --base-bg-color: rgb(240, 240, 240);
-    /* Inverted from rgb(15, 15, 15) */
     --base-color: rgb(1, 2, 0);
-    /* Inverted from rgb(254, 253, 255) */
     --header-bg-color: rgb(228, 228, 228);
-    /* Inverted from rgb(27, 27, 27) */
     --header-color: rgb(1, 2, 0);
-    /* Inverted from rgb(254, 253, 255) */
     --header-hover-color: rgb(0, 255, 255);
-    /* Inverted from rgb(255, 0, 0) */
+    --header-dropdown-bg-color: rgb(235, 235, 235);
     --primary-bg-color: rgb(0, 0, 0);
-    /* Inverted from rgb(255, 255, 255) */
     --primary-color: rgb(255, 255, 255);
-    /* Inverted from rgb(0, 0, 0) */
 }
 
-#themeSwitch {
+#themeSwitch,
+#themeSwitchSM {
     height: 40px;
     width: 40px;
     padding: 0;
@@ -37,19 +33,23 @@
     margin-right: 10px;
 }
 
-#themeSwitch svg {
+#themeSwitch svg,
+#themeSwitchSM svg {
     fill: var(--primary-color);
 }
 
-#themeSwitch svg:last-child {
+#themeSwitch svg:last-child,
+#themeSwitchSM svg:last-child {
     display: none;
 }
 
-.lightmode #themeSwitch svg:first-child {
+.lightmode #themeSwitch svg:first-child,
+.lightmode #themeSwitchSM svg:first-child {
     display: none;
 }
 
-.lightmode #themeSwitch svg:last-child {
+.lightmode #themeSwitch svg:last-child,
+.lightmode #themeSwitchSM svg:last-child {
     display: block;
 }
 
@@ -73,11 +73,11 @@ header nav .nav-item {
 }
 
 header nav .dropdown-menu {
-    background-color: rgb(18, 14, 27);
+    background-color: var(--header-dropdown-bg-color);
 }
 
 header nav .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(18, 14, 27, 0.2);
+    background-color: var(--header-dropdown-bg-color);
 }
 
 .nav-item a {
