@@ -1,3 +1,13 @@
+:root {
+    --blockquote-footer-color: rgb(192, 192, 192);
+    --conatiner-bg-color: rgb(27, 27, 27);
+}
+
+.lightmode {
+    --blockquote-footer-color: rgb(63, 63, 63);
+    --conatiner-bg-color: rgb(228, 228, 228);
+}
+
 main {
     margin-top: 15px;
 }
@@ -8,7 +18,7 @@ main {
 }
 
 .blockquote-footer {
-    color: rgb(192, 192, 192);
+    color: var(--blockquote-footer-color);
     font-size: 18px;
 }
 
@@ -16,16 +26,17 @@ main {
     padding-top: 30px;
 }
 
-img {
+.container img {
     max-height: 400px;
     border-radius: 15px;
+    border: solid black 2px;
     margin-top: 2%;
 }
 
 .container {
     border-radius: 25px;
     border: solid rgb(241, 31, 78) 2px;
-    background-color: rgb(27, 27, 27);
+    background-color: var(--conatiner-bg-color);
     height: auto;
     padding: 8px;
     margin-bottom: 40px;

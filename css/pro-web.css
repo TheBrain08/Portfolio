@@ -1,3 +1,11 @@
+:root {
+    --project-bg-color: rgb(27, 27, 27);
+}
+
+.lightmode {
+    --project-bg-color: rgb(228, 228, 228);
+}
+
 main {
     margin-top: 15px;
 }
@@ -10,7 +18,7 @@ main {
 .oneProject {
     border-radius: 25px;
     border: solid 1.5px rgb(241, 31, 78);
-    background-color: rgb(27, 27, 27);
+    background-color: var(--project-bg-color);
     height: auto;
     padding: 20px;
     margin-bottom: 40px;
@@ -67,7 +75,7 @@ main {
 .modal .popup {
     border-radius: 25px;
     border: solid 1.5px rgb(241, 31, 78);
-    background-color: rgb(27, 27, 27);
+    background-color: var(--project-bg-color);
     height: auto;
     padding: 20px;
     margin-bottom: 40px;

@@ -142,51 +142,7 @@ anchorTags.forEach(anchor => {
     anchor.addEventListener('mouseout', resetHandler);
 });
 
-function sendMessage() {
-    var Name = document.getElementById("namef").value;
-    var Email = document.getElementById("Email").value;
 
-    var Nachricht = document.getElementById("Nachricht").value;
-    var request = new XMLHttpRequest();
-
-
-    request.open("POST", "https://discord.com/api/webhooks/946778451313061958/8-HIHQjlzoraPb92MCS-nO9D7UDzyLKYjOJeTbnGpA5gDWfzdF0Nq4xkjUqNYtaKWNK7");
-    // again, replace the url in the open method with yours
-    request.setRequestHeader('Content-type', 'application/json');
-
-    var myEmbed = {
-        author: {
-            name: "Portfolio Webpage"
-        },
-        title: "Portfolio",
-        fields: [{
-            "name": "Name",
-            "value": "> " + Name
-        }, {
-            "name": "Email",
-            "value": "> " + Email
-        }, {
-            "name": "Message",
-            "value": "> " + Nachricht
-        }],
-        "thumbnail": {
-            "url": "https://iili.io/EKWC74.th.png"
-        },
-        color: hexToDecimal("#F11F4E")
-    }
-
-    var params = {
-        embeds: [myEmbed]
-    }
-
-    request.send(JSON.stringify(params));
-
-    // function that converts a color HEX to a valid Discord color
-    function hexToDecimal(hex) {
-        return parseInt(hex.replace("#", ""), 16)
-    }
-    alert("Danke für deine Nachricht")
-}
 
 
 let lightmode = localStorage.getItem('lightmode');

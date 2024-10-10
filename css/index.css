@@ -12,8 +12,6 @@
     --aboutme-bg-color: rgb(228, 228, 228);
     --aboutme-container-bg-color: rgb(220, 220, 220);
     --project-bg-color: rgb(228, 228, 228);
-    /*--color: rgb(0, 150, 190);
-    --marked-color: rgb(0, 150, 190);*/
     --header-burger-bg-color: rgb(235, 235, 235);
     --header-burger-dropdown-bg-color: rgb(215, 215, 215);
 }
@@ -53,9 +51,6 @@
 
 #home #name {
     color: var(--color);
-    /*#0EB1B1*/
-    /*#0E34D8*/
-    /*#1FD1F1*/
 }
 
 .space {
@@ -179,19 +174,4 @@ a:hover .hexagonShapes {
 
 #hexagon_five:hover+#hexagon_five_text {
     display: block;
-}
-
-#contact {
-    border: 1.2px rgb(82, 82, 82) solid;
-    border-radius: 25px;
-    background-color: rgb(27, 27, 27);
-}
-
-#contact .row {
-    padding: 15px;
-}
-
-#contact h2 {
-    color: rgb(241, 31, 78);
-    font-size: 50px;
 }
