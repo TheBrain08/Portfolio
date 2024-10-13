@@ -71,7 +71,7 @@ const Projects = [{
             { headline: "Startscreen" }
         ],
         texte: [{
-            text: "What can I say ? It's just a simple TicTacToe game, play it like you know it"
+            text: "What can I say ? It's just a simple TicTacToe game, play it like you know it."
         }],
         imgs: [
             { src: "../img/WEB/TicTacToe/Startscreen.png" }
@@ -87,7 +87,7 @@ const Projects = [{
             { headline: "Startscreen" }
         ],
         texte: [{
-            text: "What can I say ? It's just a simple coinflipper, click on the button and flip the coin"
+            text: "What can I say ? It's just a simple coinflipper, click on the button and flip the coin."
         }],
         imgs: [
             { src: "../img/WEB/CoinFlip/Startscreen.png" }
