@@ -127,6 +127,7 @@ main {
 
 .modal-content {
     background-color: transparent;
+    border: none;
 }
 
 .modal li {
