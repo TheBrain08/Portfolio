@@ -144,3 +144,23 @@ main {
 .yellowText {
     color: yellow;
 }
+
+.blueText {
+    color: blue;
+}
+
+.magentaText {
+    color: magenta;
+}
+
+.cyanText {
+    color: cyan;
+}
+
+.orangeText {
+    color: #ffa500;
+}
+
+footer {
+    padding-top: 18px;
+}

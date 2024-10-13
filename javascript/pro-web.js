@@ -22,31 +22,31 @@ const Projects = [{
             { headline: "User administartion" }
         ],
         texte: [{
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             },
             {
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus. Et iure sed aut voluptatum a, vitae minima commodi excepturi"
+                text: "coming soon..."
             }
         ],
         imgs: [
