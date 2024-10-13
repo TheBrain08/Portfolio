@@ -60,6 +60,7 @@ main {
 
 .oneProject img {
     border-radius: 15px;
+    border: solid black 1px;
     margin-top: 10%;
 }
 
@@ -94,6 +95,7 @@ main {
 
 .modal .popup img {
     border-radius: 15px;
+    border: solid black 1px;
     margin-top: 10%;
 }
 
