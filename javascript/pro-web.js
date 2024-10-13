@@ -22,31 +22,31 @@ const Projects = [{
             { headline: "User administartion" }
         ],
         texte: [{
-                text: "coming soon..."
+                text: "Login with your username and password."
             },
             {
-                text: "coming soon..."
+                text: "Regist a username, email and a password."
             },
             {
-                text: "coming soon..."
+                text: "If you forgot your password you can reset it with your email."
             },
             {
-                text: "coming soon..."
+                text: "On the left side you can see which users are only this refresh automaticly every 10 seconds. On the right side is the chat, you click on a user and the chat opens on the right side. If you click on your own name you have a note chat"
             },
             {
-                text: "coming soon..."
+                text: "Here can you change your username, your email and your password. Also you can set a profile picture."
             },
             {
-                text: "coming soon..."
+                text: "There are group chats in that you can write with more than one user at the same time in one chat."
             },
             {
-                text: "coming soon..."
+                text: "Here can you see news for the chatroom."
             },
             {
-                text: "coming soon..."
+                text: "Only users with the mod or admin rank can send news. Select a title and a news and click on send."
             },
             {
-                text: "coming soon..."
+                text: "In the user administration panel you see different stats like name, email and rank this rank can also changed just with a click on the drop down."
             }
         ],
         imgs: [
