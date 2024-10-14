@@ -69,7 +69,8 @@ main {
     transition: transform 0.4s ease-in-out;
 }
 
-.oneProject img {
+.oneProject img,
+.oneProject video {
     margin-top: 50px;
     max-height: 400px;
 }
