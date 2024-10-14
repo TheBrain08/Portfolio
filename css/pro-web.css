@@ -84,7 +84,7 @@ main {
     margin-bottom: 40px;
 }
 
-.modal #xPopupbtn {
+.modal .xPopupbtn {
     position: absolute;
     top: 25px;
     right: 10px;
@@ -111,14 +111,14 @@ main {
     cursor: default;
 }
 
-.modal #popupbtn {
+.modal .popupbtn {
     background-color: rgb(241, 31, 78);
     color: white;
     margin-top: 20px;
     padding: 10px 20px;
 }
 
-.modal #popupbtn:hover {
+.modal .popupbtn:hover {
     transform: scale(1);
     cursor: pointer;
     background-color: rgb(255, 91, 126);

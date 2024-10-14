@@ -10,28 +10,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
+    <script defer src="../javascript/lightmode.js"></script>
+
     <script src="../javascript/footerLoader.js"></script>
 
 </head>
 
-<body onload="loadFooter(), window.location ='./maintenance.html'; ">
+<body onload="loadFooter()">
     <header>
-        <nav class="navbar navbar-expand sticky-top bg-gray-600">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../html/index.html">
-                    <img src="../img/logo.png" alt="Bootstrap" height="40">
+        <nav class=" navbar navbar-expand sticky-top bg-gray-600 ">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="../html/index.html ">
+                    <img src="../img/logo.png " id="logo" alt="Bootstrap " height="40 ">
                 </a>
-                <a class="navbar-brand">
-                    <img src="../img/logo-c-outline.png" alt="Bootstrap" width="30" height="30">
+                <a class="navbar-brand ">
+                    <img src="../img/logo-c-outline.png " alt="Bootstrap " width="30 " height="30 ">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarNavDropdown " aria-controls="navbarNavDropdown " aria-expanded="false " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "></span>
               </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                        </li>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown ">
+                    <ul class="navbar-nav ">
+                        <button id="themeSwitch">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -39,7 +42,24 @@
     </header>
 
     <main>
-
+        <figure class="text-center">
+            <blockquote class="blockquote text-decoration-underline">
+                <h2>House lighting system in an internship</h2>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                During a two-week internship I was asked to create a model of a home lighting system.
+            </figcaption>
+        </figure>
+        Innerhalb eines zweiwöchigen Praktikums habe ich die Aufgabe bekommen ein Beleuchtungssystem für ein Model Haus zu fertigen und zu programmieren. Dies alles am Rapsberrypi, und zwar in der Programmiersprache c erst ging es darum, simple die LEDs anzusteuern
+        dann sollte zusätzlich ein Taster hinzugefügt werden mit den man die LEDs manuell ein und aus schalten kann dann sollte es auch noch eine automatische Zeit Steuerung geben um 6:00 sollte die LEDs kurz automatisch angehen und um spätestens 22:00
+        Uhr wieder ausgehen. Dazu kam noch ein Lichtsensor, der die LEDs bei einer gewissen Helligkeit wieder ausschaltet. Zusätzlich habe ich noch ein Bewegungsmelder verwendet der ebenfalls die LEDs einschalten soll aber nach einergewissen Zeit gingen
+        sie auch wieder aus. Zum Schluss kam noch ein Türsensor von SICK dazu, der die LEDs automatisch ausschaltet, sobald die Türe sich schließt und es einschaltet, wenn sie sich öffnet. Das alles wurde dann in ein Modelhaus eingebaut welches ich selber
+        angefertigt habe aus einer Multiplexplatte. Der Rapsberrypi wurde in der innenseite an einer Hutschiene bestesteigt und dort auch verkabelt mit allen anderen Komponenten so das von außen jeglich nur der Taster zu sehen war damit man die LEDs auch
+        "bedienen" konnte. <br>
+        <img src="../img/C/ersteGrobeSkizze.png" alt="">
+        <img src="../img/C/zweitGrobeSkizze.png" alt="">
+        <img src="../img/C/circuitDiagram.png" alt="">
+        <img src="../img/C/houseSketch.png" alt="">
     </main>
     <footer id="footer"></footer>
 

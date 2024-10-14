@@ -10,11 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/pro-cpp.css">
+    <script defer src="../javascript/lightmode.js"></script>
     <script src="../javascript/footerLoader.js"></script>
 
 </head>
 
-<body onload="loadFooter(), window.location ='./maintenance.html'; ">
+<body onload="loadFooter()">
     <header>
         <nav class="navbar navbar-expand sticky-top bg-gray-600">
             <div class="container-fluid">
@@ -29,16 +31,165 @@
       </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                        </li>
+                        <button id="themeSwitch">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                        </button>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <div class="row">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-10">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#TicTacToeModal">
+                    <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                        <figure class="text-center">
+                            <blockquote class="blockquote text-decoration-underline">
+                                <h2>Slot machine with microcontroller</h2>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                This project was created within a final exam.
+                            </figcaption>
+                        </figure>
+                        <p>
+                            This is a slot machine that was created as part of a final exam. It works with <span class="fw-bolder">two microcontrollers</span>, one for the slot machine itself and one for music. The microcontroller that was used here was
+                            the <span class="fw-bolder">nucleo stm32f411</span>, which was also proposed to be used. Everything was done in c++ with the <span class="fw-bolder">mbed library</span>, and the neopixel library was also used to control the
+                            <span class="fw-bolder">three LED matrices</span>.
+                        </p>
+                        <br>
+                        <p>That's the most basic thing about the project, if you're interested in more, it continues right here below!</p>
+                        <p class="text-center"><i class="bi bi-arrow-down"></i></p>
 
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <img src="../img/CPP/FrontTwo.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-10">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#TicTacToeModal">
+                    <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                        <h2 class="text-center text-decoration-underline">How it works</h2>
+                        <p class="">When you start the slot machine for the first time you have to insert a coin to start the program.</p>
+                        <h3 class="text-center text-decoration-underline">How it works step by step</h3>
+                        <ol>
+                            <li>You have to insert a coin, then you will be asked to...</li>
+                            <li>Spin, you do this by pulling the lever on the right side down once and then releasing it again.</li>
+                            <li>Now repeat step 1 and 2 till you win.</li>
+                        </ol>
+                        <p>In case you win, a drawer opens in the middle and you can take out the coins.</p>
+                        <br>
+                        <p>You can see a visualized instruction here in the video.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <p style="height: 400px; background-color: red;">Video</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-10">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#TicTacToeModal">
+                    <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">The idea</h2>
+                            <p>Überlegen was gemacht wird</p>
+                            <p>muss kann soll</p>
+                            <p>skizze zeichenen</p>
+                            <p>ausskizze 3D model anferttigen</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            <img src="../img/CPP/Skizze&Model.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>Matrizen bestllen</p>
+                            <p>matrizen ansteuern</p>
+                            <p>Gehäuse für matrizen</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            <img src="../img/CPP/MatrixHolder.jpg" alt=""> bild allen 3 Matrizuem zusaamen
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>fräsen</p>
+                            <p>test zusammenbau</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            <img src="../img/CPP/TestBuild.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>hebelplanung</p>
+                            <p>umsetung</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            bild vom hebel /seite
+                            <video width="400" autoplay muted loop>
+                                <source src="../img/CPP/HebelAnimation.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>verkabelung</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            <img src="../img/CPP/Inside.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>lackieren</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            <img src="../img/CPP/Coloring.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>Schilder</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            <img src="../img/CPP/SignOne.jpg" alt="">
+                            <img src="../img/CPP/SignTwo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-0 col-sm-0 col-md-7 col-xl-8">
+                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <p>Finales Produkt</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                            bild vom FInalen Produkt
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
+        </div>
     </main>
     <footer id="footer"></footer>
 </body>

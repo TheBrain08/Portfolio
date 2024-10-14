@@ -48,15 +48,125 @@
         </nav>
     </header>
     <main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="chatroomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="row popup ">
-                        <button class="btn" data-bs-dismiss="modal" id="xPopupbtn">X</button>
+                        <button class="btn xPopupbtn" data-bs-dismiss="modal">X</button>
                         <div class="col-12">
+                            <p class="Headlines fw-lighter"><span class="fw-semibold numbers">01 </span><span>Chatroom</span></p>
+                            <div class="row popupTextBlock">
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">01 </span><span class="popupHeadlines">Login</span></p>
+                                        <p class="popupText">Login with your username and password.</p><img src="../img/WEB/Chatroom/Login.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/Login.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">02 </span><span class="popupHeadlines">Register</span></p>
+                                        <p class="popupText">Regist a username, email and a password.</p><img src="../img/WEB/Chatroom/Register.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/Register.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">03 </span><span class="popupHeadlines">Forgot Password</span></p>
+                                        <p class="popupText">If you forgot your password you can reset it with your email.</p><img src="../img/WEB/Chatroom/ForgotPassword.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/ForgotPassword.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">04 </span><span class="popupHeadlines">User activity and Chat</span></p>
+                                        <p class="popupText">On the left side you can see which users are only this refresh automaticly every 10 seconds. On the right side is the chat, you click on a user and the chat opens on the right side. If you click on your own name
+                                            you have a note chat</p><img src="../img/WEB/Chatroom/Chat&amp;Activity.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/Chat&amp;Activity.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">05 </span><span class="popupHeadlines">User Settings</span></p>
+                                        <p class="popupText">Here can you change your username, your email and your password. Also you can set a profile picture.</p><img src="../img/WEB/Chatroom/Settings.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/Settings.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">06 </span><span class="popupHeadlines">Groups</span></p>
+                                        <p class="popupText">There are group chats in that you can write with more than one user at the same time in one chat.</p><img src="../img/WEB/Chatroom/Groups.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/Groups.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">07 </span><span class="popupHeadlines">News</span></p>
+                                        <p class="popupText">Here can you see news for the chatroom.</p><img src="../img/WEB/Chatroom/News.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/News.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">08 </span><span class="popupHeadlines">Send News</span></p>
+                                        <p class="popupText">Only users with the mod or admin rank can send news. Select a title and a news and click on send.</p><img src="../img/WEB/Chatroom/SendNews.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/SendNews.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">09 </span><span class="popupHeadlines">User administartion</span></p>
+                                        <p class="popupText">In the user administration panel you see different stats like name, email and rank this rank can also changed just with a click on the drop down.</p><img src="../img/WEB/Chatroom/UserAdministartion.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/Chatroom/UserAdministartion.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                            </div>
+                            <p class="fw-semibold">Stack: <span class="ms-4 text-secondary">HTML</span><span class="ms-4 text-secondary">CSS</span><span class="ms-4 text-secondary">Javascript</span><span class="ms-4 text-secondary">PHP</span></p>
+                            <div></div>
                         </div>
 
-                        <button class="btn" data-bs-dismiss="modal" id="popupbtn">Close</button>
+                        <button class="btn popupbtn" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ticTacToeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="row popup ">
+                        <button class="btn xPopupbtn" data-bs-dismiss="modal">X</button>
+                        <div class="col-12">
+                            <p class="Headlines fw-lighter"><span class="fw-semibold numbers">02 </span><span>TicTacToe</span></p>
+                            <div class="row popupTextBlock">
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">01 </span><span class="popupHeadlines">Startscreen</span></p>
+                                        <p class="popupText">What can I say ? It's just a simple TicTacToe game, play it like you know it.</p><img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                            </div>
+                            <p class="fw-semibold">Stack: <span class="ms-4 text-secondary">HTML</span><span class="ms-4 text-secondary">CSS</span><span class="ms-4 text-secondary">Javascript</span></p>
+                            <div><button class="btn rounded">Go to Git <i class="bi bi-box-arrow-up-right"></i></button><button class="btn rounded">Visit Site <i class="bi bi-box-arrow-up-right"></i></button></div>
+                        </div>
+
+                        <button class="btn popupbtn" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="coinFlipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="row popup ">
+                        <button class="btn xPopupbtn" data-bs-dismiss="modal">X</button>
+                        <div class="col-12">
+                            <p class="Headlines fw-lighter"><span class="fw-semibold numbers">03 </span><span>CoinFlip</span></p>
+                            <div class="row popupTextBlock">
+                                <div class="row popupTextBlock">
+                                    <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+                                        <p class="HeadlinesSecond fw-lighter"><span class="fw-semibold numbers popupDescriptionID">01 </span><span class="popupHeadlines">Startscreen</span></p>
+                                        <p class="popupText">What can I say ? It's just a simple coinflipper, click on the button and flip the coin.</p><img src="../img/WEB/CoinFlip/Startscreen.png" alt="" class="popupImg img-fluid d-block d-sm-block d-md-block d-xl-none d-xxl-none"></div>
+                                    <div class="col-6 col-sm-0 col-md-0 col-xl-6"><img src="../img/WEB/CoinFlip/Startscreen.png" alt="" class="popupImg img-fluid d-none d-xl-block"></div>
+                                </div>
+                            </div>
+                            <p class="fw-semibold">Stack: <span class="ms-4 text-secondary">HTML</span><span class="ms-4 text-secondary">CSS</span><span class="ms-4 text-secondary">Javascript</span></p>
+                            <div><button class="btn rounded">Go to Git <i class="bi bi-box-arrow-up-right"></i></button><button class="btn rounded">Visit Site <i class="bi bi-box-arrow-up-right"></i></button></div>
+                        </div>
+
+                        <button class="btn popupbtn" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +176,7 @@
         <div class="row">
             <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
             <div class="col-12 col-sm-0 col-md-0 col-xl-6">
-                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('Chatroom')">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#chatroomModal">
                     <div class="col-0 col-sm-0 col-md-7 col-xl-7">
                         <p class="Headlines fw-lighter"><span class="fw-semibold numbers">01</span> Chatroom</p>
                         <p class="text">A Chatroom in that you can chat with other users if they are logged in.</p>
@@ -85,11 +195,9 @@
             <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
 
             <div class="col-12 col-sm-0 col-md-0 col-xl-6">
-                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('TicTacToe')">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#ticTacToeModal">
                     <div class="col-12 col-sm-12 col-md-5 col-xl-5 d-none d-md-block">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('TicTacToe')">
-                            <img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="img-fluid">
-                        </a>
+                        <img src="../img/WEB/TicTacToe/Startscreen.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-0 col-sm-0 col-md-7 col-xl-7">
                         <p class="Headlines fw-lighter"><span class="fw-semibold numbers">02</span> TicTacToe</p>
@@ -109,7 +217,7 @@
         <div class="row">
             <div class="col-12 col-sm-0 col-md-0 col-xl-3"></div>
             <div class="col-12 col-sm-0 col-md-0 col-xl-6">
-                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadPopupContent('CoinFlip')">
+                <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#coinFlipModal">
                     <div class="col-0 col-sm-0 col-md-7 col-xl-7">
                         <p class="Headlines fw-lighter"><span class="fw-semibold numbers">03</span> CoinFlip</p>
                         <p class="text">Its a coin flipper</p>
