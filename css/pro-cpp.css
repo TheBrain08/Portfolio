@@ -1,11 +1,13 @@
 :root {
     --blockquote-footer-color: rgb(192, 192, 192);
     --project-bg-color: rgb(27, 27, 27);
+    --table-border-color: white;
 }
 
 .lightmode {
     --blockquote-footer-color: rgb(63, 63, 63);
     --project-bg-color: rgb(228, 228, 228);
+    --table-border-color: black;
 }
 
 main {
@@ -83,4 +85,23 @@ li {
 .bi-arrow-down {
     color: rgb(241, 31, 78);
     font-size: 60px;
+}
+
+.nameplate {
+    width: 100%;
+}
+
+.nameplate,
+td,
+th {
+    border: solid var(--table-border-color) 1px;
+    padding: 5px;
+}
+
+.nameplate .companyName {
+    font-size: 25px;
+}
+
+.nameplate .ce {
+    font-size: 35px;
 }

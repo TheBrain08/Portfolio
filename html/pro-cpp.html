@@ -21,10 +21,10 @@
         <nav class="navbar navbar-expand sticky-top bg-gray-600">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../html/index.html">
-                    <img class="img-fluid" src="../img/logo.png" alt="Bootstrap" height="40">
+                    <img src="../img/logo.png" id="logo" alt="Bootstrap" height="40">
                 </a>
                 <a class="navbar-brand">
-                    <img class="img-fluid" src="../img/logo-cpp-outline.png" alt="Bootstrap" width="30" height="30">
+                    <img src="../img/logo-cpp-outline.png" alt="Bootstrap" width="30" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,7 @@
                         <p class="text-center"><i class="bi bi-arrow-down"></i></p>
 
                     </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                    <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                         <img class="img-fluid" src="../img/CPP/FrontTwo.png" alt="">
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                         <br>
                         <p>You can see a visualized instruction here in the video.</p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                    <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                         <p style="height: 400px; background-color: red;">Video</p>
                     </div>
                 </div>
@@ -99,48 +99,53 @@
             <div class="col-12 col-sm-0 col-md-0 col-xl-1"></div>
             <div class="col-12 col-sm-0 col-md-0 col-xl-10">
                 <div class="row oneProject" data-bs-toggle="modal" data-bs-target="#TicTacToeModal">
-                    <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                    <h2 class="text-center text-decoration-underline">The product</h2>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
                             <h2 class="text-center text-decoration-underline">The idea</h2>
-                            <p>Überlegen was gemacht wird</p>
-                            <p>muss kann soll</p>
-                            <p>skizze zeichenen</p>
-                            <p>ausskizze 3D model anferttigen</p>
+                            <p>We thought about what kind of product it should be, the idea of building a slot machine came up and that was then implemented.</p>
+                            <p>Because it was created during a final examination, a must, can, should table had to be created. This shows:</p>
+                            <ul>
+                                <li>What the product <span class="fw-bolder">MUST</span> be able to do </li>
+                                <li>what the product <span class="fw-bolder">CAN</span> do</li>
+                                <li>what the product <span class="fw-bolder">SHOULD</span> do</li>
+                            </ul>
+                            <p>First, a sketch was made from which I then modeled a preliminary version of the slot machine in a CAD.</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                             <img class="img-fluid" src="../img/CPP/Skizze&Model.png" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
-                            <p>Matrizen bestllen</p>
-                            <p>matrizen ansteuern</p>
-                            <p>Gehäuse für matrizen</p>
+                            <h2 class="text-center text-decoration-underline">The matrices</h2>
+                            <p>When it was clear what we wanted, we ordered three LED matrices, which we tested straight away and provided with an additional power supply. Then we programmed numbers for testing that the matrices also displayed.</p>
+                            <p>Now the question was how we would attach the matrices. I modeled a housing for a matrix, which I then printed three times with the 3D printer. In order to hold the three matrices together, they were then glued together with
+                                a plexiglass plate.</p>
+                            <p>Unfortunately, the matrices were too bright, so we got a tint film and stuck it onto the plexiglass plate so that you could also see inside.</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
-                            <img class="img-fluid" src="../img/CPP/MatrixHolder.jpg" alt=""> bild allen 3 Matrizuem zusaamen
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
+                            <img class="img-fluid" src="../img/CPP/MatrixHolder.jpg" alt="">
+                            <img class="img-fluid" style="height: 400px;" src="../img/CPP/3Matrizen.png" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
-                            <p>fräsen</p>
-                            <p>test zusammenbau</p>
+                            <h2 class="text-center text-decoration-underline">Housing</h2>
+                            <p>The housing was first 3D modeled piece by piece and then milled out of a plywood board using a CNC milling machine.</p>
+                            <p>Then it was first assembled in a test white and checked to see if all the existing components fit in.</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                             <img class="img-fluid" src="../img/CPP/TestBuild.jpg" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
-                            <p>hebelplanung</p>
-                            <p>umsetung</p>
+                            <h2 class="text-center text-decoration-underline">The lever</h2>
+                            <p>The question quickly arose as to how the slot machine actually works... It was clear that a button was needed, but a simple button was too boring and not particularly visually appealing, so I decided to use a lever. </p>
+                            <p>I set about designing and animating a lever in a 3D CAD, but how does this lever activate a button? Inside the slot machine there is a limit switch that is activated as soon as the lever is pushed down.</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
-                            bild vom hebel /seite
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                             <video class="img-fluid" autoplay muted loop>
                                 <source src="../img/CPP/HebelAnimation.mp4" type="video/mp4">
                             </video>
@@ -148,39 +153,75 @@
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <h2 class="text-center text-decoration-underline">Cabling</h2>
                             <p>verkabelung</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                             <img class="img-fluid" src="../img/CPP/Inside.jpg" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <h2 class="text-center text-decoration-underline">Paintwork</h2>
                             <p>lackieren</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                             <img class="img-fluid" src="../img/CPP/Coloring.jpg" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
-                            <p>Schilder</p>
+                            <h2 class="text-center text-decoration-underline">Signage</h2>
+                            <p>To symbolize where the coins are inserted, I made a sign with the inscription "Insert a GHSE coin", which was then glued over the coin slot</p>
+                            <p>I also created a nameplate with the exact data for the slot machine</p>
+                            (Everything is German values)
+                            <table class="text-center nameplate">
+                                <tbody>
+                                    <tr>
+                                        <th class="companyName" colspan="2">Company</th>
+                                        <th class="ce">CE</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">street</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">zip code</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Typ</th>
+                                        <th colspan="2">one-armed bandit</th>
+                                    </tr>
+                                    <tr>
+                                        <td>year of construction </td>
+                                        <td>2022/23</td>
+                                        <td>Nr. 001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>230V</td>
+                                        <td>1Ph</td>
+                                        <td>50Hz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>400W</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
                             <img class="img-fluid" src="../img/CPP/SignOne.jpg" alt="">
                             <img class="img-fluid" src="../img/CPP/SignTwo.jpg" alt="">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-0 col-sm-0 col-md-7 col-xl-8">
-                            <h2 class="text-center text-decoration-underline">How did it come about?</h2>
+                            <h2 class="text-center text-decoration-underline">The final product</h2>
                             <p>Finales Produkt</p>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
-                            bild vom FInalen Produkt
+                        <div class="col-12 col-sm-12 col-md-5 col-xl-4 images">
+                            <img class="img-fluid" src="../img/CPP/Coloring.jpg" alt=""> bild vom FInalen Produkt
                         </div>
                     </div>
 

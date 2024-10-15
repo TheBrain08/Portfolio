@@ -98,7 +98,7 @@ main {
     padding: 5px 10px;
     border-radius: 50%;
     border: solid var(--upToTop-outline-color) 1px;
-    background-color: rgb(245, 73, 111);
+    background-color: rgb(241, 31, 78);
     color: white;
     font-size: 30px;
     position: fixed;
