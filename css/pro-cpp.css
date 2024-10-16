@@ -24,7 +24,7 @@ main {
     font-size: 18px;
 }
 
-.oneProject {
+.project {
     border-radius: 25px;
     border: solid 1.5px rgb(241, 31, 78);
     background-color: var(--project-bg-color);
@@ -33,7 +33,7 @@ main {
     margin-bottom: 40px;
 }
 
-.oneProject .row {
+.project .row {
     padding-top: 15px;
 }
 
@@ -71,10 +71,19 @@ main {
     transition: transform 0.4s ease-in-out;
 }
 
-.oneProject img,
-.oneProject video {
+.project img,
+.project video {
     margin-top: 50px;
     max-height: 400px;
+}
+
+.project video::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+.finalProduct {
+    all: unset;
+    width: 400px;
 }
 
 p,
