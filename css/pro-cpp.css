@@ -81,9 +81,15 @@ main {
     display: none;
 }
 
-.finalProduct {
+.finalProduct,
+.cabling {
     all: unset;
-    width: 400px;
+    max-width: 400px;
+    border-radius: 25%;
+}
+
+.componentPlan {
+    max-width: 770px;
 }
 
 p,
