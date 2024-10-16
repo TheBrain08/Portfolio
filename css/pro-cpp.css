@@ -84,12 +84,7 @@ main {
 .finalProduct,
 .cabling {
     all: unset;
-    max-width: 400px;
-    border-radius: 25%;
-}
-
-.componentPlan {
-    max-width: 770px;
+    max-width: 100%;
 }
 
 p,
