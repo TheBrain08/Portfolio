@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/pro-c.css">
     <script defer src="../javascript/lightmode.js"></script>
 
     <script src="../javascript/footerLoader.js"></script>
@@ -42,24 +43,34 @@
     </header>
 
     <main>
-        <figure class="text-center">
-            <blockquote class="blockquote text-decoration-underline">
-                <h2>House lighting system in an internship</h2>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                During a two-week internship I was asked to create a model of a home lighting system.
-            </figcaption>
-        </figure>
-        Innerhalb eines zweiwöchigen Praktikums habe ich die Aufgabe bekommen ein Beleuchtungssystem für ein Model Haus zu fertigen und zu programmieren. Dies alles am Rapsberrypi, und zwar in der Programmiersprache c erst ging es darum, simple die LEDs anzusteuern
-        dann sollte zusätzlich ein Taster hinzugefügt werden mit den man die LEDs manuell ein und aus schalten kann dann sollte es auch noch eine automatische Zeit Steuerung geben um 6:00 sollte die LEDs kurz automatisch angehen und um spätestens 22:00
-        Uhr wieder ausgehen. Dazu kam noch ein Lichtsensor, der die LEDs bei einer gewissen Helligkeit wieder ausschaltet. Zusätzlich habe ich noch ein Bewegungsmelder verwendet der ebenfalls die LEDs einschalten soll aber nach einergewissen Zeit gingen
-        sie auch wieder aus. Zum Schluss kam noch ein Türsensor von SICK dazu, der die LEDs automatisch ausschaltet, sobald die Türe sich schließt und es einschaltet, wenn sie sich öffnet. Das alles wurde dann in ein Modelhaus eingebaut welches ich selber
-        angefertigt habe aus einer Multiplexplatte. Der Rapsberrypi wurde in der innenseite an einer Hutschiene bestesteigt und dort auch verkabelt mit allen anderen Komponenten so das von außen jeglich nur der Taster zu sehen war damit man die LEDs auch
-        "bedienen" konnte. <br>
-        <img src="../img/C/ersteGrobeSkizze.png" alt="">
-        <img src="../img/C/zweitGrobeSkizze.png" alt="">
-        <img src="../img/C/circuitDiagram.png" alt="">
-        <img src="../img/C/houseSketch.png" alt="">
+
+
+        <div class="row">
+            <div class="col-12 col-sm-0 col-md-0 col-xl-2"></div>
+            <div class="col-12 col-sm-0 col-md-0 col-xl-8 project">
+                <figure class="text-center">
+                    <blockquote class="blockquote text-decoration-underline">
+                        <h2>House lighting system in an internship</h2>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        During a two-week internship I was asked to create a model of a home lighting system.
+                    </figcaption>
+                </figure>
+                <p>During a two-week internship, I was given the task of manufacturing and programming a lighting system for a model house. I did all of this on a Rapsberry Pi, in the C programming language. First, it was a matter of simply controlling the
+                    LEDs, then I had to add a button which could be used to manually switch the LEDs on and off, and then there had to be an automatic timer so that the LEDs would briefly turn on automatically at 6:00 and go off again by 10:00 p.m. at
+                    the latest. I also added a light sensor which turns the LEDs off again when they reach a certain brightness. I also used a motion detector which was also supposed to turn the LEDs on, but after a certain time they went off again. Finally,
+                    I added a door sensor from SICK which automatically turns the LEDs off as soon as the door closes and turns them on when it opens. All of this was then installed in a model house which I made myself out of a multiplex board. The Rapsberrypi
+                    was mounted on the inside of a DIN rail and wired up there with all the other components so that from the outside only the button was visible so that the LEDs could be "operated".</p>
+                <h4 class="text-center text-decoration-underline">Sadly I have no pictures of the final product, so only these sketches and a very rough circuit diagram</h4>
+                <img class="img-fluid rounded" src="../img/C/ersteGrobeSkizze.png" alt="">
+                <img class="img-fluid rounded" src="../img/C/zweitGrobeSkizze.png" alt="">
+                <img class="img-fluid rounded" src="../img/C/houseSketch.png" alt="">
+                <img class="img-fluid rounded" src="../img/C/circuitDiagram.png" alt="">
+            </div>
+        </div>
+        <div class="col-12 col-sm-0 col-md-0 col-xl-2">
+        </div>
+
     </main>
     <a href="#">
         <span class="backToTop"><i class="bi bi-arrow-up"></i></span>

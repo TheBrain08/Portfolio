@@ -97,7 +97,7 @@ main {
 .backToTop {
     padding: 5px 10px;
     border-radius: 50%;
-    border: solid var(--upToTop-outline-color) 1px;
+    border: solid var(--upToTop-outline-color) 2px;
     background-color: rgb(241, 31, 78);
     color: white;
     font-size: 30px;

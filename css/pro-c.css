@@ -1,0 +1,38 @@
+:root {
+    --blockquote-footer-color: rgb(192, 192, 192);
+    --project-bg-color: rgb(27, 27, 27);
+}
+
+.lightmode {
+    --blockquote-footer-color: rgb(63, 63, 63);
+    --project-bg-color: rgb(228, 228, 228);
+}
+
+main {
+    margin-top: 15px;
+}
+
+.blockquote-footer {
+    color: var(--blockquote-footer-color);
+    font-size: 18px;
+}
+
+.project {
+    border-radius: 25px;
+    border: solid 1.5px rgb(241, 31, 78);
+    background-color: var(--project-bg-color);
+    height: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.project img {
+    border: solid black 2px;
+    max-height: 800px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.project h4 {
+    color: red;
+}
