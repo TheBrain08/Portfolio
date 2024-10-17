@@ -39,7 +39,7 @@ main {
 
 .project img,
 .project video {
-    padding-top: 50px;
+    margin-top: 25px;
 }
 
 .project video::-webkit-media-controls-mute-button {
