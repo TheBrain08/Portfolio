@@ -24,6 +24,10 @@ main {
     font-size: 18px;
 }
 
+.figure-caption {
+    color: var(--blockquote-footer-color);
+}
+
 .project {
     border-radius: 25px;
     border: solid 1.5px rgb(241, 31, 78);
@@ -39,9 +43,26 @@ main {
 
 .project img,
 .project video {
+    border: solid black 1px;
     margin-top: 25px;
 }
 
 .project video::-webkit-media-controls-mute-button {
     display: none;
+}
+
+.redText {
+    color: red;
+}
+
+.greenText {
+    color: green;
+}
+
+.blueText {
+    color: rgb(85, 85, 255);
+}
+
+.orangeText {
+    color: #ffa500;
 }
