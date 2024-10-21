@@ -99,14 +99,6 @@ main {
     margin-top: 10%;
 }
 
-.popupText {
-    margin-left: 30px;
-}
-
-.popupTextBlock {
-    margin-left: 25px;
-}
-
 .modal img:hover {
     cursor: default;
 }
@@ -127,4 +119,8 @@ main {
 .modal-content {
     background-color: transparent;
     border: none;
+}
+
+.modal li {
+    list-style-type: circle;
 }
